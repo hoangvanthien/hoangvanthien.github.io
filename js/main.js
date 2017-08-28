@@ -9,18 +9,6 @@ var main = {
   init : function() {
 
     main.initAddThis();
-
-    // Check if there is a scrollbox to initialize
-    if ($("#scroll-box").length > 0 && Cookies.get('daScrollboxSubscribe3') === undefined) {
-      if ($("article").length > 0) {
-        main.scrollBoxCheck = $("article").offset().top + $("article").height() * 0.4;
-        $("#scroll-box-close").click(function() {
-          $("#scroll-box").fadeOut(500);
-          $("body").removeClass("scroll-box-on");
-          Cookies.set('daScrollboxSubscribe3', '1', { expires: 1 });
-        });
-      }
-    }
     
     $(window).scroll(function() {
       // Shorten the navbar after scrolling a little bit down
@@ -29,16 +17,6 @@ var main = {
       } else {
         $(".navbar").removeClass("top-nav-short");
       }
-      
-      // Check if the scrollbox should be made visible
-      if (main.scrollBoxCheck) {
-        if ($(window).scrollTop() > main.scrollBoxCheck) {
-          setTimeout( function(){ $("#scroll-box").fadeIn(500); }, 500);
-          main.scrollBoxCheck = false;
-          $("body").addClass("scroll-box-on");
-        }
-      }
-
     });
     
     // On mobile, hide the avatar when expanding the navbar menu

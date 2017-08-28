@@ -894,3 +894,26 @@ pre code {
     margin-bottom: 7px;
   }
 }
+.has-img {
+  height: 600px;
+  margin-bottom: 100px;
+}
+.big-img.intro-header {
+  height: 100%;
+}
+.center {
+  text-align: center;
+}
+.katex-display > .katex {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow-x: scroll;
+  text-align: initial;
+}
+.katex {
+  font: normal 1.21em KaTeX_Main, Times New Roman, serif;
+  line-height: 1.2;
+  white-space: normal;
+  text-indent: 0;
+}

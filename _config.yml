@@ -44,7 +44,7 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "thelazycat"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-99578582-2"
@@ -69,7 +69,7 @@ title-separator: "-"
 timezone: "Asia/Ho_Chi_Minh"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: pretty
 paginate: 5
 
 kramdown:
@@ -120,6 +120,7 @@ prose:
     - /css
     - /img
     - /js
+    - "*.ipynb"
   metadata:
     _posts:
       - name: "layout"

@@ -3,39 +3,6 @@ layout: page
 title: About Me
 subtitle: Or why you should date me
 css: ["/css/aboutme.css", "/css/timeline.css"]
-timeline:
-  - year: 2017
-    details:
-      - month: July
-        details:
-          - I was accepted to Vietnamese-German University, achieving a scholarship of 75%.
-          - Became a mentor of PiMA, teaching Python.
-          - Guest speaker at Southern Camp.
-          - This website was born.
-      - month: January
-        details:
-          - Won the 2nd prize at Vietnam Olympiad of Informatics.
-          
-  - year: 2016
-    details:
-      - month: November
-        details:
-          - First time got involved in an open-source community, FOSSASIA, in a competition called Google Code-in.
-      - month: August
-        details:
-          - Became a student of PiMA.
-      - month: January
-        details:
-          - Went to Ly Tu Trong Gifted High School.
-  - year: 2014
-    details:
-      - details:
-        - Won the bronze medal at the National Mathematical ViOlmypic.
-        - Went to Luu Huu Phuoc High School.
-  - year: 1999
-    details:
-      - details:
-        - I was born. :)
 ---
 
 <div id="aboutme-section">
@@ -78,7 +45,7 @@ Born and grew up in <i>Can Tho, Vietnam</i>, moved to <i>Binh Duong, Vietnam</i>
   <div class="item">
     <div id="timeline">
       <div>
-        {% for year in page.timeline %}
+        {% for year in site.data.timeline %}
         <section class="year">
           <h3>{{ year['year'] }}</h3>
           {% for month in year['details'] %}

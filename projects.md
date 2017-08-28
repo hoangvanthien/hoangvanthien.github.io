@@ -13,7 +13,9 @@ Welcome to my showroom! Here are my proudest projects and activities I have had 
 
 - **[Free Contest:](https://sites.google.com/site/kc97blf/)** A weekly contest for all Vietnamese students that helps them practice their skills in coding, problem solving, designing algorithms. I used to be proposer of the team, but now I mainly work as a system administrator and a communicator.
 
-- **[Project in Mathematics and Applications:](http://pimavn.com)** A mission to inspire the young to study Mathematics by their tremendously useful applications to daily life and urgent issues the world is facing.
+- **[Project in Mathematics and Applications:](http://pimavn.com)** A mission to inspire the young to study Mathematics together with its useful applications in daily life and in urgent issues the world is facing.
+
+![PiMA 2017](/img/pima-1.jpg){:class="img-responsive"}
 
 ## Projects
 
