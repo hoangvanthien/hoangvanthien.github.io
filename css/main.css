@@ -107,7 +107,16 @@ img::-moz-selection {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: white;
+  background: black;
+}
+
+.navbar-custom .navbar-right {
+  margin: 0px;
+}
+
+.navbar-custom .navbar-brand {
+  margin-left: 0px !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -895,8 +904,12 @@ pre code {
   }
 }
 .has-img {
-  height: 600px;
+  height: 660px;
   margin-bottom: 100px;
+}
+
+.big-img .container {
+    height: 100%;
 }
 .big-img.intro-header {
   height: 100%;
