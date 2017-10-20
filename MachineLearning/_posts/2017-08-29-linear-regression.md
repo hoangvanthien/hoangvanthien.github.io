@@ -2,8 +2,6 @@
 layout: post
 title: Hồi quy tuyến tính
 subtitle: Linear Regression
-bigimg:
-  - "/img/linear-regression-1.jpg": "Source: martechtoday.com"
 ---
 
 Mình đang học Machine Learning, và mình chọn Linear Regression làm chủ đề nghiên cứu đầu tiên của mình.

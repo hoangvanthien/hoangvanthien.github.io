@@ -104,6 +104,15 @@ var main = {
   	  if (main.numImgs > 1) {
     	  getNextImg();
   	  }
+    } else {
+      var pattern = Trianglify({
+        height: 600,
+        width: window.innerWidth,
+        cell_size: 40});
+      
+      var src = pattern.png();
+      var desc = "";
+      main.setImg(src, desc);
     }
   },
   
