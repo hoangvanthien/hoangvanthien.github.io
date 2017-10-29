@@ -106,7 +106,7 @@ var main = {
   	  }
     } else {
       var pattern = Trianglify({
-        height: 600,
+        height: window.innerHeight,
         width: window.innerWidth,
         cell_size: 40});
       

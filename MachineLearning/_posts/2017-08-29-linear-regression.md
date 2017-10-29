@@ -5,10 +5,10 @@ subtitle: Linear Regression
 ---
 
 Mình đang học Machine Learning, và mình chọn Linear Regression làm chủ đề nghiên cứu đầu tiên của mình.
- Thực ra trên mạng không hề thiếu những cái này. 
- Blog Machine Learning cơ bản của bác Vũ Hữu Tiệp trình bày cũng rất hay (link tham khảo ở dưới) nhưng mình đọc vẫn còn thấy khó hiểu vì bác viết có vẻ... gọn quá, mình phải tìm đọc nhiều nguồn khác nhau mới hiểu được.
- Vậy nên, mình viết blog này để dành đọc lại sau này và cho bạn nào muốn tìm hiểu.
- Do là vừa học vừa viết nên có thể sẽ gặp thiếu sót, mong các bạn chân thành góp ý ở phía dưới.
+Thực ra trên mạng không hề thiếu những cái này. 
+Blog Machine Learning cơ bản của bác Vũ Hữu Tiệp trình bày cũng rất hay (link tham khảo ở dưới) nhưng mình đọc vẫn còn thấy khó hiểu vì bác viết có vẻ... gọn quá, mình phải tìm đọc nhiều nguồn khác nhau mới hiểu được.
+Vậy nên, mình viết blog này để dành đọc lại sau này và cho bạn nào muốn tìm hiểu.
+Do là vừa học vừa viết nên có thể sẽ gặp thiếu sót, mong các bạn chân thành góp ý ở phía dưới.
 
 <!-- vscode-markdown-toc -->
 1. [Giới thiệu](#Giithiu)

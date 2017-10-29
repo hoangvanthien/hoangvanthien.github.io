@@ -22,7 +22,9 @@ Okay bây giờ mình sẽ xem hình minh họa, học Toán mà thiếu hình m
 
 {:.center}
 <img src="/img/water-reddit.jpg">
-<em>Source: Reddit
+
+{:.center}
+<em>Source: Reddit</em>
 
 Thì cái bức tường này, người ta có thể mô phỏng sơ sơ thông qua cái hàm $z=\cos(\sqrt{x^2+y^2})$. Hàm này có hình dạng như sau:
 

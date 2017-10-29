@@ -17,6 +17,17 @@ icat: ""
 2. Mathematics
     1. Multivariable Calculus
         1. [Multivariable Functions](/math/2017/09/18/multivariable-functions)
-        2. Derivatives of Multivariable Functions
+        2. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
 3. Uncategorized
     1. [Làm sao để thuyết trình tốt?](/uncategorized/2017/10/20/presentation)
+
+<br>
+<hr>
+<br>
+
+{:.center}
+<h1>VGU Weekly Learning</h1>
+<p>Every week, I learned some cool stuff outside the classroom and put them here</p>
+
+1. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
+
