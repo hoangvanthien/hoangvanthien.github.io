@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Thien Hoang"
-subtitle: Python Developer / Blogger
+subtitle: Hire me. I need money. I'm also starving.
 css: "/css/index.css"
 meta-title: "Thien Hoang - Computer Enthusiast"
-meta-description: "Begin to study Bachelor of Computer Science in Fall 2017. Experienced in Competitive Programming, Algorithms, Data Structures."
+meta-description: "Currently a freshman"
 icat: ""
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: What keep me away from life cycle
+subtitle: Reasons for not going to parties
 comments: true
 ---
 
