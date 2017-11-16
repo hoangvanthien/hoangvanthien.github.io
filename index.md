@@ -27,7 +27,7 @@ icat: ""
 
 {:.center}
 <h1>VGU Weekly Learning</h1>
-<p>Every week, I learned some cool stuff outside the classroom and put them here</p>
+<p>Every week, I learn some cool stuff outside the classroom and put them here</p>
 
 1. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
 
