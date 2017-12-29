@@ -3,11 +3,12 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: sans-serif;
   font-size: 18px;
   color: #404040;
   position: relative;
   background: #FFF;
+  line-height: 30px;
 }
 p {	
   line-height: 1.5;
@@ -909,17 +910,4 @@ pre code {
 
 .center {
   text-align: center;
-}
-.katex-display > .katex {
-  display: inline-block;
-  white-space: nowrap;
-  max-width: 100%;
-  overflow-x: scroll;
-  text-align: initial;
-}
-.katex {
-  font: normal 1.21em KaTeX_Main, Times New Roman, serif;
-  line-height: 1.2;
-  white-space: normal;
-  text-indent: 0;
 }

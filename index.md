@@ -18,6 +18,9 @@ icat: ""
     1. Multivariable Calculus
         1. [Multivariable Functions](/math/2017/09/18/multivariable-functions)
         2. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
+    2. Number Theory and Cryptography
+        1. [Fermat Little Theorem và Euler's Totient Function](/math/2017/11/05/fermat-euler/)
+        2. Chinese Remainder Theorem
 3. Uncategorized
     1. [Làm sao để thuyết trình tốt?](/uncategorized/2017/10/20/presentation)
 
@@ -30,4 +33,4 @@ icat: ""
 <p>Every week, I learn some cool stuff outside the classroom and put them here</p>
 
 1. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
-
+2. [Fermat Little Theorem và Euler's Totient Function](/math/2017/11/05/fermat-euler/)
