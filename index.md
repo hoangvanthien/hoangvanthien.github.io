@@ -1,11 +1,8 @@
 ---
 layout: page
 title: "Thien Hoang"
-subtitle: Hire me. I need money. I'm also starving.
+subtitle: "22.4591577184"
 css: "/css/index.css"
-meta-title: "Thien Hoang - Computer Enthusiast"
-meta-description: "Currently a freshman"
-icat: ""
 ---
 
 {:.center}
@@ -20,9 +17,9 @@ icat: ""
         2. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
     2. Number Theory and Cryptography
         1. [Fermat Little Theorem và Euler's Totient Function](/math/2017/11/05/fermat-euler/)
-        2. Chinese Remainder Theorem
+        2. [Extended Euclid, Modular Multiplicative Inverse, and Chinese Remainder Theorem](/math/2017/11/12/extended-euclid)
 3. Uncategorized
-    1. [Làm sao để thuyết trình tốt?](/uncategorized/2017/10/20/presentation)
+    1. [How to deliver a good presentation?](/uncategorized/2017/10/20/presentation)
 
 <br>
 <hr>
@@ -30,7 +27,9 @@ icat: ""
 
 {:.center}
 <h1>VGU Weekly Learning</h1>
-<p>Every week, I learn some cool stuff outside the classroom and put them here</p>
+<p>Every week, I learn some cool stuff and put them here</p>
 
 1. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
 2. [Fermat Little Theorem và Euler's Totient Function](/math/2017/11/05/fermat-euler/)
+3. [Extended Euclid, Modular Multiplicative Inverse, and Chinese Remainder Theorem](/math/2017/11/12/extended-euclid)
+

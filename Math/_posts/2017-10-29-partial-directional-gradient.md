@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Partial Derivative, Directional Derivative, và Gradient
+title: ["Đạo hàm thành phần, ", "Đạo hàm có hướng, ", "và Gradient"]
 subtitle: Weekly learning &#35;1
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Làm sao để thuyết trình tốt?
+title: ["Làm sao để thuyết trình tốt?"]
 subtitle: Học môn thuyết trình tại VGU
 ---
 Lên VGU học được môn thuyết trình ở lớp của James Reynolds, rất vui. Viết cái này ra để sau này tự đọc lại.

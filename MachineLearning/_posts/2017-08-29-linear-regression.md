@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hồi quy tuyến tính
+title: ["Hồi quy tuyến tính"]
 subtitle: Linear Regression
 ---
 

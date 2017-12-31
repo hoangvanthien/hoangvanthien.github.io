@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hàm đa biến
+title: ["Hàm đa biến"]
 subtitle: Multivariable Functions
 ---
 
