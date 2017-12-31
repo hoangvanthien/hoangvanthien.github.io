@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ["Định lý nhỏ Fermat", "và Phi hàm Euler"]
+title: ["Định lý nhỏ Fermat ", "và Phi hàm Euler"]
 subtitle: Weekly learning &#35;2
 ---
 Trong bài này:
