@@ -911,3 +911,9 @@ pre code {
 .center {
   text-align: center;
 }
+
+.blog-img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}

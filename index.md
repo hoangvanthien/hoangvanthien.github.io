@@ -18,6 +18,7 @@ css: "/css/index.css"
     2. Number Theory and Cryptography
         1. [Fermat Little Theorem và Euler's Totient Function](/math/2017/11/05/fermat-euler/)
         2. [Extended Euclid, Modular Multiplicative Inverse, and Chinese Remainder Theorem](/math/2017/11/12/extended-euclid)
+        3. [RSA Cryptography](/math/2018/01/01/rsa/) 
 3. Uncategorized
     1. [How to deliver a good presentation?](/uncategorized/2017/10/20/presentation)
 
@@ -27,9 +28,9 @@ css: "/css/index.css"
 
 {:.center}
 <h1>VGU Weekly Learning</h1>
-<p>Every week, I learn some cool stuff and put them here</p>
+<p>Every few weeks, I learn some cool stuff and put them here</p>
 
 1. [Partial Derivative, Directional Derivative, và Gradient](/math/2017/10/29/partial-directional-gradient)
 2. [Fermat Little Theorem và Euler's Totient Function](/math/2017/11/05/fermat-euler/)
 3. [Extended Euclid, Modular Multiplicative Inverse, and Chinese Remainder Theorem](/math/2017/11/12/extended-euclid)
-
+4. [RSA Cryptography](/math/2018/01/01/rsa/)
