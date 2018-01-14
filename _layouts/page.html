@@ -1,18 +1,21 @@
 ---
-layout: base
+layout: default
 ---
 
-{% include header.html type="page" %}
+  <div id="page">
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+    </header>
 
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <article class="page-content">
       {{ content }}
-	  {% if page.comments %}
-      <div class="disqus-comments">
-	    {% include disqus.html %}
-      </div>
-	  {% endif %}
-    </div>
-  </div>
-</div>
+    </article>
+
+
+  </div><!-- end page content -->
+
+
+  {% if site.owner.disqus-shortname and page.comments == true %}
+  <div id="disqus_thread"></div>
+  {% include disqus.html %}
+  {% endif %}
