@@ -13,4 +13,4 @@
 
 ## Copyrighted content
 
-- All images on the blog posts, unless clearly noted, are original contents created by the author, Thien Hoang.
+- All images on the blog posts, unless clearly noted, are original contents created by the author.

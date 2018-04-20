@@ -4,7 +4,8 @@ title:  Categories
 permalink: /categories/
 ---
 <div class="tag-list">
-{% for cat in site.categories %}
+{% assign categories = site.categories | sort %}
+{% for cat in categories %}
   <div class="tag-group">
     {% capture cat_name %}{{ cat | first }}{% endcapture %}
     <h2 class="tag-group-title" id="{{ cat_name | slugize }}">{{ cat_name }}</h2>
