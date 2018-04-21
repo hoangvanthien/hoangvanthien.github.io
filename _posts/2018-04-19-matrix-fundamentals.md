@@ -7,21 +7,21 @@ Ghi lại nhanh sau này coi lại, đã dốt toán lại còn không nhớ dai
 
 Cho ma trận $m\times n$ sau:
 
-$$ \begin{array}{cccc} a_{11} & a_{12} & \dots & a_{1n} \\ 
+$$ \begin{bmatrix} a_{11} & a_{12} & \dots & a_{1n} \\ 
                         a_{21} & a_{22} & \dots & a_{2n} \\
                         \vdots & \vdots & \ddots & \vdots \\
-                        a_{m1} & a_{m2} & \dots & a_{mn} \end{array} $$
+                        a_{m1} & a_{m2} & \dots & a_{mn} \end{bmatrix} $$
 
-- Đối với ma trận vuông $\textbf{A}$ bậc $n$, đường chéo gồm các phần tử $ a_{11}, a_{22}, \dots, a_{mn} $ được gọi là đường chéo chính (**principal** or **leading** diagonal). Tổng các phần tử trên đường chéo chính gọi là **trace** của $\textbf{A}$.
+- Đối với ma trận vuông $A$ bậc $n$, đường chéo gồm các phần tử $ a_{11}, a_{22}, \dots, a_{mn} $ được gọi là đường chéo chính (**principal** or **leading** diagonal). Tổng các phần tử trên đường chéo chính gọi là **trace** của $A$.
 - Ma trận chéo là ma trận mà các phần tử khác 0 chỉ nằm trên đường chéo chính. Trường hợp đặc biệt, nếu cả đường chéo chính chỉ gồm các số 1 thì đó gọi là ma trận đơn vị (**identity** or **unit** matrix).
-- Cách tạo ma trận chuyển vị $ \textbf{A}^T $: Đem cột rải thành hàng
-- Ma trận đối xứng (**symmetric matrix**) khi $ \textbf{A} = \textbf{A}^T $, phản đối xứng (**skew symmetric matrix**) khi $ \textbf{A} = -\textbf{A}^T $
+- Cách tạo ma trận chuyển vị $ A^T $: Đem cột rải thành hàng
+- Ma trận đối xứng (**symmetric matrix**) khi $ A = A^T $, phản đối xứng (**skew symmetric matrix**) khi $ A = -A^T $
 - Hai ma trận bằng nhau khi chúng có cùng shape, các cặp phần tử tương ứng đều bằng nhau.
 - Nhân vô hướng (multiplication by a scalar) một số với ma trận: nhân số đó với từng phần tử trong ma trận
 - Cộng ma trận (phải cùng shape): các cặp phần tử tương ứng cộng nhau
-    - Tính chất giao hoán (commulative) $ \textbf{A}+\textbf{B}=\textbf{B}+\textbf{A} $
-    - Tính chất kết hợp (associative) $ (\textbf{A}+\textbf{B})+\textbf{C}=\textbf{A}+(\textbf{B}+\textbf{C}) $
-    - Tính chất phân phối (distributive): $ \lambda(\textbf{A}+\textbf{B})=\lambda\textbf{A}+\lambda\textbf{B} $
+    - Tính chất giao hoán (commulative) $ A+B=B+A $
+    - Tính chất kết hợp (associative) $ (A+B)+C=A+(B+C) $
+    - Tính chất phân phối (distributive): $ \lambda(A+B)=\lambda A+\lambda B $
 - Nhân ma trận `a[m][n]` với `b[n][k]`, tạo ra ma trận `c[m][k]`:
     
 ```python
@@ -32,19 +32,19 @@ $$ \begin{array}{cccc} a_{11} & a_{12} & \dots & a_{1n} \\
 ```
 
 - Tính chất nhân ma trận:
-    - Phản giao hoán: $ \textbf{A}\textbf{B}\neq\textbf{B}\textbf{A} $
-    - Tính chất kết hợp: $ (\textbf{A}\textbf{B})\textbf{C}=\textbf{A}(\textbf{B}\textbf{C}) $
-    - Nếu $ \lambda $ là số, thì: $ (\lambda\textbf{A})\textbf{B} = \textbf{A}(\lambda\textbf{B}) = \lambda(\textbf{A}\textbf{B}) $
-    - Tính chất phân phối với phép cộng: $ (\textbf{A}+\textbf{B})\textbf{C}=\textbf{A}\textbf{C}+\textbf{B}\textbf{C} $ và $ \textbf{A}(\textbf{B}+\textbf{C})=\textbf{A}\textbf{B}+\textbf{A}\textbf{C} $
+    - Phản giao hoán: $ AB\neq BA $
+    - Tính chất kết hợp: $ (AB)C=A(BC) $
+    - Nếu $ \lambda $ là số, thì: $ (\lambda A)B = A(\lambda B) = \lambda(AB) $
+    - Tính chất phân phối với phép cộng: $ (A+B)C=AC+BC $ và $ A(B+C)=AB+AC $
 - Tính chất của ma trận chuyển vị:
-    - $ (\textbf{A}+\textbf{B})^T=\textbf{A}^T+\textbf{B}^T $
-    - $ (\textbf{A}^T)^T = \textbf{A} $
-    - $ (\textbf{A}\textbf{B})^T=\textbf{B}^T\textbf{A}^T $
+    - $ (A+B)^T=A^T+B^T $
+    - $ (A^T)^T = A $
+    - $ (AB)^T=B^TA^T $
 
-Định thức (determinant) của ma trận vuông bậc $n$ $\textbf{A}$ được định nghĩa đệ quy như sau:
+Định thức (determinant) của ma trận vuông bậc $n$ $A$ được định nghĩa đệ quy như sau:
 
-- Nếu ma trận chỉ có một phần tử, $\|\textbf{A}\| = a_{11}$
-- Ngược lại, $ \|\textbf{A}\|=\sum_{j=1}^{n}(-1)^{i+j}a_{ij}M_{ij} $ (với $i$ bất kì), trong đó $M_{ij}$ là định thức của ma trận vuông còn lại sau khi bỏ hàng $i$ cột $j$.
+- Nếu ma trận chỉ có một phần tử, $\|A\| = a_{11}$
+- Ngược lại, $ \|A\|=\sum_{j=1}^{n}(-1)^{i+j}a_{ij}M_{ij} $ (với $i$ bất kì), trong đó $M_{ij}$ là định thức của ma trận vuông còn lại sau khi bỏ hàng $i$ cột $j$.
 
 Khái niệm:
 
@@ -57,19 +57,22 @@ Tính chất của định thức:
 - Nếu một hàng (cột) của matrix cùng chia hết cho một số $\lambda$ thì có thể tách nhân tử $\lambda$ ra ngoài matrix, tính det của matrix mới, rồi nhân với $\lambda$ để có được det của matrix ban đầu.
 - Tráo đổi hai hàng (cột) của matrix làm đổi dấu det.
 
-$$ \textrm{det}\left( \begin{array}{cc} a_{11} + b_{11} & a_{12}+b_{12}\\ a_{21} & a_{22} \end{array} \right) = \textrm{det}\left( \begin{array}{cc} a_{11} & a_{12}\\ a_{21} & a_{22} \end{array} \right) + \textrm{det}\left( \begin{array}{cc} b_{11} & b_{12}\\ a_{21} & a_{22} \end{array} \right) $$
+$$ \begin{vmatrix} a_{11}+b_{11} & a_{12}+b_{12}\\ a_{21} & a_{22} \end{vmatrix}=\begin{vmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{vmatrix}+\begin{vmatrix} b_{11} & b_{12} \\ a_{21} & a_{22} \end{vmatrix} $$
 
-- $\|\textbf{A}^T\|=\|\textbf{A}\|$
-- $\|\textbf{AB}\|=\|\textbf{A}\|\textbf{B}\|$
+- $\|A^T\|=\|A\|$
+- $\|AB\|=\|A\|B\|$
 
 Ma trận liên hợp (**adjoint matrix**) là ma trận chuyển vị của ma trận các cofactor của một ma trận vuông.
 
-- $\textbf{A}(\textrm{adj}\ \textbf{A}) = \|\textbf{A}\|\textbf{I}$
-- $\|\textrm{adj}\ \textbf{A}\|=\|\textbf{A}\|^{n-1}$, với $n$ là bậc của ma trận
-- $\textrm{adj}\ \textbf{AB}=(\textrm{adj}\ \textbf{B})(\textrm{adj}\ \textbf{A})$
+- $A(\textrm{adj}\ A) = \|A\|I$
+- $\|\textrm{adj}\ A\|=\|A\|^{n-1}$, với $n$ là bậc của ma trận
+- $\textrm{adj}\ AB=(\textrm{adj}\ B)(\textrm{adj}\ A)$
 
 Ma trận nghịch đảo:
 
-- $ \textbf{A}^{-1}\textbf{A}=\textbf{A}\textbf{A}^{-1}=\textbf{I} $
-- Nếu det của **A** khác 0: $ \textbf{A}^{-1}=(\textrm{adj}\ \textbf{A})/\|\textbf{A}\| $, ngược lại thì nghịch đảo của **A** không tồn tại
-- $ (\textbf{A}\textbf{B})^{-1}=\textbf{B}^{-1}\textbf{A}^{-1} $
+- $ A^{-1}A=AA^{-1}=I $
+- Nếu det của **A** khác 0: $ A^{-1}=(\textrm{adj}\ A)^T/\|A\| $, ngược lại thì nghịch đảo của **A** không tồn tại
+- $ (AB)^{-1}=B^{-1}A^{-1} $
+
+
+
