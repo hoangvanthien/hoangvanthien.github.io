@@ -1,9 +1,14 @@
+- name: CGAL Project
+  link: https://www.cgal.org/
+  date: May 2018 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Student Developer
+
 - name: PiMA
   link: http://pimavn.com
   date: 2017 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
-  job: Mentor
+  job: Mentor, Content Editor
 
 - name: Free Contest
   link: https://sites.google.com/site/kc97blf/
   date: 2016 - 2017
-  job: Junior System Administrator, Assistant
+  job: Junior System Administrator, Content Editor
