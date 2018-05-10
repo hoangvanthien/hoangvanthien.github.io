@@ -4,3 +4,4 @@ _config.yml
 _drafts
 .ruby-version
 .DS_Store
+.vscode
