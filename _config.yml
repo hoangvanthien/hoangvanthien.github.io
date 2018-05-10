@@ -38,11 +38,11 @@ owner:
   job: "Student"
   bio: "Studying Computer Science at Vietnamese-German University"
   email: thienvhoang99@gmail.com
-  disqus-shortname: thelazycat
+  disqus-shortname:
   twitter: ThienVHoang
-  facebook: hvt99
+  facebook:
   google:
-    analytics: "UA-99578582-2"
+    analytics:
     verify:
     ad-client:
     ad-slot:
