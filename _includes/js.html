@@ -1,7 +1,15 @@
 <script type="text/javascript" src="{{ site.url }}/js/jquery-3.2.1.min.js"></script>
+{% for ext_js in page.ext_js %}
+<script src="{{ ext_js }}"></script>
+{% endfor %}
+
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ site.url }}/js/main.js"></script>
 <script type="text/javascript" src="{{ site.url }}/lightbox/js/lightbox.min.js"></script>
+{% for js in page.js %}
+<script type="text/javascript" src="{{ site.url }}/{{ js }}"></script>
+{% endfor %}
+
 {% if site.owner.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>

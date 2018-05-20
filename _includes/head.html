@@ -41,6 +41,12 @@
   <link rel="stylesheet" href="{{ site.url }}/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ site.url }}/css/main.css">
   <link rel="stylesheet" href="{{ site.url }}/lightbox/css/lightbox.min.css">
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ site.url }}/{{ css }}">
+  {% endfor %}
+  {% for ext_css in page.ext_css %}
+  <link rel="stylesheet" href="{{ ext_css }}">
+  {% endfor %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.url }}" />
