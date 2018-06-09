@@ -33,8 +33,9 @@ kramdown:
 ####################################
 #
 owner:
-  name: Thien Hoang
-  avatar:
+  vorname: Thien
+  familienname: Hoang
+  avatar: favicon.png
   job: "Student"
   bio: "''I think I just got smarter!''<br>''Nope.''<br>––Ogre Magi (on leveling up)"
   email: thienvhoang99@gmail.com
