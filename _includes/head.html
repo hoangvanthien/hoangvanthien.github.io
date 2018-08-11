@@ -22,16 +22,24 @@
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="{{ site.url }}/img/leonids-logo.png">
+  {% if page.image.feature %}
+    <meta property="twitter:image" content="{{ site.url }}/img/{{ page.image.feature }}" />
+  {% else %}
+    <meta property="twitter:image" content="{{ site.url }}/favicon.png">
+  {% endif %}
+  <meta property="twitter:description" content="{{ page.subtitle }}" />
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="blog">
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="{{ site.url }}/img/leonids-logo.png">
-  <title>{{ title }}</title>
+  {% if page.image.feature %}
+    <meta property="og:image" content="{{ site.url }}/img/{{ page.image.feature }}" />
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/favicon.png">
+  {% endif %}
+  <meta property="og:description" content="{{ page.subtitle }}">
+  <title>{{ page.title }}</title>
 
   <!-- CSS files -->
 
