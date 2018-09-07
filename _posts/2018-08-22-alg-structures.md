@@ -2,6 +2,7 @@
 layout: post
 title: "Algebraic structures (vn)"
 categories: ["Mathematics"]
+excerpt_separator: <!--more-->
 ---
 
 ## Property of closure
@@ -9,6 +10,8 @@ categories: ["Mathematics"]
 _Closure_ (aka. _luật hợp thành trong_) trên tập E là một **phép toán** mà khi tác động giữa hai phần tử thuộc E, chỉ cho ra một kết quả duy nhất và kết quả này cũng thuộc E. Closure là một ánh xạ $E\times E\mapsto E$. Lúc này ta gọi $E$ là một tập kín (_closed set_) dưới phép toán nói trên.
 
 Ví dụ, trong tập $\mathbb{N}$, phép cộng (+) và phép nhân (*) là các luật thành trong, nhưng phép trừ (-) thì không phải, vì kết quả phép trừ có thể là số âm, nằm ngoài phạm vi của tập $\mathbb{N}$.
+
+<!--more-->
 
 ### Tính chất của một luật hợp thành trong
 
