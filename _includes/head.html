@@ -4,7 +4,9 @@
   {% capture title %}{{ site.title }}{% endcapture %}
 {% endif %}
 
-{% if page.excerpt %}
+{% if page.description %}
+  {% capture description %}{{ page.description }}{% endcapture %}
+{% elsif page.excerpt %}
   {% capture description %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endcapture %}
 {% else %}
   {% capture description %}{{ site.description }}{% endcapture %}
