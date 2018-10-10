@@ -62,6 +62,8 @@ Ngoài ra, $S$ là một cơ sở của $V$ nếu và chỉ nếu mỗi vector t
 
 Trong không gian vector $n$ chiều, một cơ sở $S=\\{v_1, v_2,\dots,v_n\\}$ gọi là cơ sở _chính tắc_ (_standard basis_) nếu $v_i$ là một vector có thành phần thứ $i$ bằng 1 và những thành phần còn lại bằng 0 (có dạng $v_i = (0\ 0\ \dots\ 0\ 1\ 0\ 0\dots\ 0)$).
 
+**Bổ đề Steinitz**: Nếu ta có $S = \\{v_1, v_2,\dots,v_r\\}$ là một họ vector độc lập tuyến tính trong không gian $n$ chiều $V$ ($r < n$) thì ta có thể bổ sung $n-r$ vector nữa để hình thành một cơ sở của $V$.
+
 ## Tích vô hướng
 
 Trong hình học Euclid $\mathbb{R}^n$, ta đã được biết khái niệm tích vô hướng của hai vector $x=(x_1,x_2,\dots,x_n)$ và $y=(y_1,y_2,\dots,y_n)$ như sau: 
