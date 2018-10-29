@@ -12,7 +12,7 @@
     padding: 30px;
   }
   @include media-query($medium-screen) {
-    height: 100vh;
+    height: 100%;
     position: initial;
     width: 100%;
   }
@@ -52,6 +52,16 @@
         margin-right: -10px;
     }
   }
+}
+.sidebar {
+    // @include media-query($small-screen) {
+    //     background-position: center;
+    //     padding: 30px;
+    // }
+    @include media-query($medium-screen) {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 .social-links {
   margin-top: 0.5em;
