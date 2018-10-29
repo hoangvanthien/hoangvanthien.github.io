@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Linear Transformation (vn)"
+title: "Ánh xạ tuyến tính"
 categories: ["Mathematics"]
+ext-js: ["main.js"]
 excerpt-seperator: <!--more-->
 ---
 
@@ -113,7 +114,9 @@ hay viết cách khác:
 
 $$\mathrm{nullity}(T) + \mathrm{rank}(T) = \mathrm{dim}(V)$$
 
-### Chứng minh
+<h3 onClick="toggleShowHide('proof-rank-nullity-theorem')" class="toggleButton"> &#x25B6; Chứng minh</h3>
+
+<div id="proof-rank-nullity-theorem" class="toggleContent" markdown="1">
 
 Giả sử $V$ có số chiều là $n$ và $\mathrm{dim}(\mathrm{Ker}(T)) = k$ (với $0 < k < n$). Do đó, $\mathrm{Ker}(T)$ sẽ có cơ sở là:
 
@@ -150,8 +153,8 @@ $T(v)\in \mathrm{Im}(T)$, và:
 $$
 \begin{align*}
     T(v) &= T(c_1v_1 + c_2v_2 + \dots + c_nv_n)\\
-         &= c_1T(v_1) + \dots + c_nT(v_n)\\
-         &= c_{k+1}T(v_{k+1}) + \dots + c_nT(v_n)
+        &= c_1T(v_1) + \dots + c_nT(v_n)\\
+        &= c_{k+1}T(v_{k+1}) + \dots + c_nT(v_n)
 \end{align*}
 $$
 
@@ -191,7 +194,7 @@ Trong trường hợp $k = 0$, dễ thấy rằng $\mathrm{Ker}(T) = \\{0\\}$. T
 $$
 \begin{align*}
     T(v) &= T(c_1v_1 + c_2v_2 + \dots + c_nv_n)\\
-         &= c_1T(v_1) + \dots + c_nT(v_n)\\
+        &= c_1T(v_1) + \dots + c_nT(v_n)\\
 \end{align*}
 $$
 
@@ -213,6 +216,7 @@ Vậy $\mathrm{dim}(\mathrm{Im}(T)) = n$.
 Trong trường hợp $k = n$, thêm yếu tố $\mathrm{Ker}(T)$ là không gian con của $V$, ta có $\mathrm{Ker}(T) = V$. Chọn $S_2 = \\{v_1,\dots,v_n\\}$ làm cơ sở của $V$.
 
 Như vậy, ta thấy $T(v) \in \mathrm{Im}(T)$ và $T(v) = 0\ \forall v\in V$. Tức là $\mathrm{Im}(T) = \\{0\\}$, suy ra số chiều bằng 0.
+</div> <!--end proof-->
 
 ### Hệ quả
 
@@ -262,7 +266,8 @@ $$A' = PAP^{-1}$$
 
 trong đó $P$ là ma trận chuyển cơ sở từ $B$ sang $B'$ (nghĩa là $P\[x\]_B = \[x\]\_\{B'\}$ ).
 
-### Chứng minh:
+<h3 onClick="toggleShowHide('proof-matrix-sim')" class="toggleButton"> &#x25B6; Chứng minh</h3>
+<div id="proof-matrix-sim" class="toggleContent" markdown="1">
 
 Ta có $A\[x\]_B = \[T(x)\]_B$ và $A'\[x\]\_\{B'\} = \[T(x)\]\_\{B'\}$. Suy ra 
 
@@ -274,6 +279,8 @@ $$
 Vậy nên:
 
 $$A' = PAP^{-1}$$
+
+</div>
 
 ### Vấn đề rút gọn ma trận
 

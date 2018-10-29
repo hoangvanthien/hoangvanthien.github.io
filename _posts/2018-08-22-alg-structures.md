@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Algebraic structures (vn)"
+title: "Các cấu trúc đại số"
 categories: ["Mathematics"]
 excerpt_separator: <!--more-->
 ---

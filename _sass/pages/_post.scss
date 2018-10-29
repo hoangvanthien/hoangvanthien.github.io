@@ -44,11 +44,6 @@ section.post {
   padding: 0.5em 1em;
 }
 
-// Post title
-.post-title {
-
-}
-
 .post-title-link {
 	color: $primary;
 	font-size: 14px;
@@ -286,4 +281,14 @@ a.read-more {
 .post-image-caption {
     text-align: center;
     margin: 10px 0 0 0;
+}
+
+.toggleContent {
+    border-left: 1px solid grey;
+    padding-left: 15px;
+    display: none;
+}
+
+.toggleButton {
+    cursor: pointer;
 }

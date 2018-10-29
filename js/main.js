@@ -9,3 +9,12 @@ function resizeIframe(iframe) {
     iframe.height = height + 500 + "px";
     iframe.contentWindow.document.body.focus();
 }
+
+function toggleShowHide(id) {
+    var x = document.getElementById(id);
+    if (x.style.display !== "block") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

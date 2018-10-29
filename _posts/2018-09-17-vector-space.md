@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vector Space (vn)"
+title: "Không gian vector"
 categories: ["Mathematics"]
 excerpt_separator: <!--more-->
 ---
@@ -221,7 +221,7 @@ $$
 [u]_{S'} = \begin{bmatrix}1 & 3\\ 2 & -1\end{bmatrix}\begin{bmatrix}2\\ 7\end{bmatrix} = P[u]_S
 $$
 
-Ma trận $P$ được gọi là ma trận chuyển đổi (_change-of-basis matrix_) từ cơ sở $S$ sang $S'$. Ma trận này được tính bằng cách lấy từng vector trong $S'$ biểu diễn toạ độ qua cơ sở $S$ rồi dựng toạ độ đó thành cột.
+Ma trận $P$ được gọi là ma trận chuyển đổi (_change-of-basis matrix_) từ cơ sở $S$ sang $S'$. Ma trận này được tính bằng cách lấy từng vector trong $S$ biểu diễn toạ độ qua cơ sở $S'$ rồi dựng toạ độ đó thành cột.
 
 > Side note: Cách gọi chuyển từ cơ sở $S$ sang $S'$ nhìn chung vẫn không có sự thống nhất giữa các tài liệu. Theo mình được biết, các tài liệu ở Nga gọi ma trận $P$ là chuyển đổi từ $S'$ sang $S$, trái ngược lại với các tài liệu ở Mỹ (từ $S$ sang $S'$). Sách mình đang đọc (và có lẽ cũng như nhiều giáo trình toán cao cấp khác của Việt Nam) có trích dẫn tài liệu tham khảo tiếng Nga, nên gọi là chuyển đổi từ $S'$ sang $S$. Cá nhân mình dùng cách gọi Mỹ vì nó... thuận theo ý nghĩa tự nhiên của bài toán đang xét.
 
