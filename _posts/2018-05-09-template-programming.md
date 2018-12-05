@@ -3,6 +3,7 @@ layout: post
 categories: ["C++"]
 title: ["A Collection of Concepts and Issues in Template Metaprogramming"]
 excerpt_separator: <!--more-->
+sticky: true
 ---
 
 This is a note from Walter E. Brown's talk at CppCon 2014 -- "Modern Template Metarogramming - A compendium."
