@@ -130,23 +130,6 @@ $$
 u = \langle u,v_1\rangle v_1 + \langle u,v_2\rangle v_2 + \dots + \langle u,v_n\rangle v_n
 $$
 
-### Quá trình Gram-Schmidt
-
-Cho một không gian vector $V$ có cơ sở $S=\\{v_1, v_2,\dots,v_n\\}$. Phương pháp biến đổi $S$ thành một họ trực giao $S'=\\{u_1, u_2,\dots,u_n\\}$ sao cho $\mathrm{span}(S') = V$ gọi là quá trình trực giao hóa. Một trong những phương pháp đó là quá trình Gram-Schmidt:
-
-1. $$u_1 = v_1$$
-2. $$u_2 = v_2 - \mathrm{proj}_{u_1}(v_2)$$
-3. $$\vdots$$
-4. $$ u_n = v_n - \mathrm{proj}_{ u_{n-1} } (v_n) $$
-
-Trong đó $\mathrm{proj}_{u}(v)$ là vector hình chiếu của $v$ lên $u$, được tính như sau:
-
-$$
-\mathrm{proj}_u(v) = \frac{\langle u,v\rangle}{\langle u,u\rangle}u
-$$
-
-Sau khi có họ trực giao, việc trực chuẩn hóa là vấn đề đơn giản (chia vô hướng mỗi vector trong họ cho độ dài của nó).
-
 ### Hình chiếu của một vector lên không gian con
 
 Giả sử $S=\\{v_1, v_2,\dots,v_m\\}$ là một họ trực chuẩn các vector trong $V$. Gọi $W=\mathrm{span}(S)$ là không gian con của $V$. Hình chiếu trực giao (đặt là $w$) của vector $u$ bất kỳ trong $V$ lên không gian con $W$ là một vector thuộc $W$ và $u-w$ trực giao với mọi vector trong $W$. Hình chiếu trực giao được tính bằng công thức sau:
@@ -168,6 +151,19 @@ $$
 Do mọi vector $x$ trong $W$ đều được biểu diễn bằng một tổ hợp tuyến tính các vector trong họ $S$ và $u-w$ trực giao với tất cả các vector trong họ $S$ nên suy ra $u-w$ trực giao với mọi vector $x$.
 
 Như vậy biểu thức $w$ là công thức đúng.
+
+### Quá trình Gram-Schmidt
+
+Cho một không gian vector $V$ có cơ sở $S=\\{v_1, v_2,\dots,v_n\\}$. Phương pháp biến đổi $S$ thành một họ trực giao $S'=\\{u_1, u_2,\dots,u_n\\}$ sao cho $\mathrm{span}(S') = V$ gọi là quá trình trực giao hóa. Một trong những phương pháp đó là quá trình Gram-Schmidt:
+
+- $$u_1 = v_1,\ \eta_1 = \frac{u_1}{|u_1|}$$
+- $$u_2 = v_2 - w_2,\ \eta_2 = \frac{u_2}{|u_2|}$$
+- $$\vdots$$
+- $$ u_n = v_n - w_n,\ \eta_n = \frac{u_n}{|u_n|} $$
+
+Trong đó $w_i$ là vector hình chiếu của $v_i$ lên không gian tạo bởi họ trực chuẩn $\{\eta_1, \dots, \eta\_{i-1}\}$, được tính như vừa trình bày ở phần trên.
+
+Kết thúc $n$ bước ta có $\{\eta_1, \dots, \eta\_{i-1}\}$ là họ đã được trực chuẩn hóa từ cơ sở $S$.
 
 ## Tọa độ
 
@@ -221,9 +217,56 @@ $$
 [u]_{S'} = \begin{bmatrix}1 & 3\\ 2 & -1\end{bmatrix}\begin{bmatrix}2\\ 7\end{bmatrix} = P[u]_S
 $$
 
-Ma trận $P$ được gọi là ma trận chuyển đổi (_change-of-basis matrix_) từ cơ sở $S$ sang $S'$. Ma trận này được tính bằng cách lấy từng vector trong $S$ biểu diễn toạ độ qua cơ sở $S'$ rồi dựng toạ độ đó thành cột.
+Ma trận $P$ được gọi là ma trận chuyển đổi (_change-of-basis matrix_) từ cơ sở $S$ sang $S'$. Ma trận này được tính bằng cách sau:
 
-> Side note: Cách gọi chuyển từ cơ sở $S$ sang $S'$ nhìn chung vẫn không có sự thống nhất giữa các tài liệu. Theo mình được biết, các tài liệu ở Nga gọi ma trận $P$ là chuyển đổi từ $S'$ sang $S$, trái ngược lại với các tài liệu ở Mỹ (từ $S$ sang $S'$). Sách mình đang đọc (và có lẽ cũng như nhiều giáo trình toán cao cấp khác của Việt Nam) có trích dẫn tài liệu tham khảo tiếng Nga, nên gọi là chuyển đổi từ $S'$ sang $S$. Cá nhân mình dùng cách gọi Mỹ vì nó... thuận theo ý nghĩa tự nhiên của bài toán đang xét.
+- Dựng các vector trong cơ sở $S$ và $S'$ thành các cột, tạo nên hai ma trận lần lượt là $A$ và $B$.
+- Tính $P = B^{-1}A$.
+
+Khi được biết biểu diễn $\[u\]\_B$, ta có thể tính $\[u\]\_{B'} = P\[u\]\_B$.
+Ngược lại, khi biết $\[u\]\_{B'}$, ta có thể tính $\[u\]\_B = P^{-1}\[u\]\_{B'}$.
+
+Thật vậy, giả sử chúng ta biểu diễn mỗi vector $v_1, \dots, v_n$ qua cơ sở mới $S'$ như sau:
+
+<h4 onClick="toggleShowHide('proof-change-of-basis')" class="toggleButton" markdown="1"> &#x25B6; Xem thêm</h4>
+<div id="proof-change-of-basis" class="toggleContent" markdown="1">
+
+$$
+\left\{\begin{matrix}
+
+v_1 = p_{11}v_1' + p_{21}v_2' + \dots + p_{n1}v_n'\\
+v_2 = p_{12}v_1' + p_{22}v_2' + \dots + p_{n2}v_n'\\
+\dots\\
+v_n = p_{1n}v_1' + p_{2n}v_2' + \dots + p_{nn}v_n'
+
+\end{matrix}\right.
+$$
+
+Ta có:
+
+$$
+\begin{bmatrix} v_1 & \dots & v_n \end{bmatrix} = \begin{bmatrix} v_1' & \dots & v_n' \end{bmatrix} \begin{bmatrix} p_{11} & \dots & p_{1n}\\ \vdots & \ddots & \vdots\\ p_{n1} & \dots & p_{nn} \end{bmatrix}
+$$
+
+Viết gọn hơn là: $A = BP \Leftrightarrow P = B^{-1}A$
+
+Xét một vector $u$ có tọa độ $\[u\]\_S = (x_1, \dots, x_n)$ và $\[u\]\_{S'} = (y_1, \dots, y_n)$
+
+$$
+\begin{align*}
+u &= \begin{bmatrix} v_1 & \dots & v_n \end{bmatrix}\begin{bmatrix} x_1\\ \dots\\ x_n \end{bmatrix}\\
+  &= A\begin{bmatrix} x_1\\ \dots\\ x_n \end{bmatrix}\\
+  &= BP\begin{bmatrix} x_1\\ \dots\\ x_n \end{bmatrix}\\
+  &= B\left(P\begin{bmatrix} x_1\\ \dots\\ x_n \end{bmatrix}\right)
+\end{align*}
+$$
+
+Bản thân $P\begin{bmatrix} x_1 & \dots & x_n \end{bmatrix}^T$ cũng là một vector, và việc nó được nhân tiền tố với $B$ (gồm các vector trong $S'$) tạo ra $u$ cho thấy $P\begin{bmatrix} x_1 & \dots & x_n \end{bmatrix}^T$ là biểu diễn của $u$ trong cơ sở $S'$.
+
+Lập luận tương tự, với $P^{-1} = A^{-1}B$ chính là ma trận chuyển cơ sở từ $S'$ sang $S$.
+
+</div>
+
+> Side note: Việc gọi $P$ là ma trận chuyển cơ sở cần đi kèm với công thức $\[u\]\_S = P\[u\]\_{S'}$ để cho thấy sự liên hệ toán học rõ ràng giữa hai tọa độ. Cách nói "chuyển từ cơ sở $S$ sang $S'$" vẫn chưa đầy đủ và dễ gây hiểu nhầm.
 
 ### Tính chất
 
