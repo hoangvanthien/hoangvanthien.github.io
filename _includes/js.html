@@ -23,7 +23,7 @@
 
 {% endif %}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
@@ -37,12 +37,29 @@
       }
     },
     tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      displayMath: [ ['$$','$$'] ],
+      inlineMath: [ ['\(','\)'] ],
+      displayMath: [ ['\]','\]'] ],
       processEscapes: true,
     },
     CommonHTML: { linebreaks: { automatic: true } },
     "HTML-CSS": { linebreaks: { automatic: true } },
            SVG: { linebreaks: { automatic: true } }
   });
+</script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+
+<script>
+    $("script[type='math/tex']").replaceWith(function() {
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: false});
+    });
+</script>
+<script>
+    $("script[type='math/tex; mode=display']").replaceWith(function() {
+        var tex = $(this).html();
+        // replace() here is due to CDATA wrapper (#224). KaTeX chokes on the % character,
+        // which is unfortunate (and should probably be reported).
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
 </script>

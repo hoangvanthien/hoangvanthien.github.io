@@ -7,9 +7,9 @@ excerpt_separator: <!--more-->
 
 ## Property of closure
 
-_Closure_ (aka. _luật hợp thành trong_) trên tập E là một **phép toán** mà khi tác động giữa hai phần tử thuộc E, chỉ cho ra một kết quả duy nhất và kết quả này cũng thuộc E. Closure là một ánh xạ $E\times E\mapsto E$. Lúc này ta gọi $E$ là một tập kín (_closed set_) dưới phép toán nói trên.
+_Closure_ (aka. _luật hợp thành trong_) trên tập E là một **phép toán** mà khi tác động giữa hai phần tử thuộc E, chỉ cho ra một kết quả duy nhất và kết quả này cũng thuộc E. Closure là một ánh xạ $$E\times E\mapsto E$$. Lúc này ta gọi $$E$$ là một tập kín (_closed set_) dưới phép toán nói trên.
 
-Ví dụ, trong tập $\mathbb{N}$, phép cộng (+) và phép nhân (*) là các luật thành trong, nhưng phép trừ (-) thì không phải, vì kết quả phép trừ có thể là số âm, nằm ngoài phạm vi của tập $\mathbb{N}$.
+Ví dụ, trong tập $$\mathbb{N}$$, phép cộng (+) và phép nhân (*) là các luật thành trong, nhưng phép trừ (-) thì không phải, vì kết quả phép trừ có thể là số âm, nằm ngoài phạm vi của tập $$\mathbb{N}$$.
 
 <!--more-->
 
@@ -17,10 +17,10 @@ Ví dụ, trong tập $\mathbb{N}$, phép cộng (+) và phép nhân (*) là cá
 
 Dưới đây là một số tính chất **có thể có** của một luật hợp thành trong (ký hiệu bằng dấu sao (*)).
 
-1. Tính kết hợp (_Associativity_): $\forall a,b,c\in E$ ta có $a\*(b\*c) = (a\*b)\*c$.
-2. Tính giao hoán (_Commutativity_): $\forall a,b\in E$ ta có $a\*b = b\*a$.
-3. Phần tử trung hòa (_Identity element_): Một phần tử $e$ được gọi là phần tử trung hòa nếu $\forall a\in E$ ta có $a\* e=e\* a=a$. Cách gọi khác: phần tử đơn vị.
-4. Phần tử đối (_Inverse element_): Một phần tử $a'$ được gọi là phần tử đối của $a$ nếu $a\* a' = a'\* a = e$.
+1. Tính kết hợp (_Associativity_): $$\forall a,b,c\in E$$ ta có $$a\*(b\*c) = (a\*b)\*c$$.
+2. Tính giao hoán (_Commutativity_): $$\forall a,b\in E$$ ta có $$a\*b = b\*a$$.
+3. Phần tử trung hòa (_Identity element_): Một phần tử $$e$$ được gọi là phần tử trung hòa nếu $$\forall a\in E$$ ta có $$a\* e=e\* a=a$$. Cách gọi khác: phần tử đơn vị.
+4. Phần tử đối (_Inverse element_): Một phần tử $$a'$$ được gọi là phần tử đối của $$a$$ nếu $$a\* a' = a'\* a = e$$.
 
 ## Algebraic structures
 
@@ -42,8 +42,8 @@ thì nhóm (G, *) gọi là nhóm giao hoán, hoặc là _nhóm Abelian_.
 
 Như vậy, có thể suy ra hai quy tắc sau đúng trong một nhóm:
 
-- Quy tắc giản ước: $a\* x=b\* x \Rightarrow a = b$
-- Quy tắc chuyển vế: $a\* x=b \Rightarrow x = a'\* b$
+- Quy tắc giản ước: $$a\* x=b\* x \Rightarrow a = b$$
+- Quy tắc chuyển vế: $$a\* x=b \Rightarrow x = a'\* b$$
 
 Hai quy tắc này là những công cụ hữu hiệu để giải phương trình trong một nhóm.
 
@@ -59,7 +59,7 @@ $$ a*(b+c) = a* b + a* c $$
 
 $$ (b+c)* a = b* a + c* a $$
 
-- $a\* 0 = 0\* a = 0$
+- $$a\* 0 = 0\* a = 0$$
 
 Nếu có thêm:
 
@@ -73,7 +73,7 @@ Nếu có thêm:
 
 thì vành (A, +, *) gọi là _vành có đơn vị_.
 
-Như vậy, chúng ta không có định nghĩa luật chia trong vành (luật chia thực tế là quy định phần tử đối của luật nhân). Điều này có nghĩa là chúng ta chưa giải được những phương trình như $a\* b=c$. Tuy nhiên, trong _vành nguyên_ (aka _integral domain_), phương trình $a\* b = 0$ có thể được giải qua mệnh đề tương đương "$a = 0$ hoặc $b = 0$".
+Như vậy, chúng ta không có định nghĩa luật chia trong vành (luật chia thực tế là quy định phần tử đối của luật nhân). Điều này có nghĩa là chúng ta chưa giải được những phương trình như $$a\* b=c$$. Tuy nhiên, trong _vành nguyên_ (aka _integral domain_), phương trình $$a\* b = 0$$ có thể được giải qua mệnh đề tương đương "$$a = 0$$ hoặc $$b = 0$$".
 
 ### Field
 

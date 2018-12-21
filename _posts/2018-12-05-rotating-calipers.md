@@ -84,7 +84,7 @@ GetAllAntiPodalPairs(p[1..n])
         i++
 ```
 
-Consider the definition of `ANGLE(m,n)`. This would basically mess up the whole algorithm. If you apply this algorithm to my polygon drawn above, you will see the loop that was supposed to find the first pair of antipodals will be terminated at the first check `angle(i, j) < pi`. If we move vector AB and vector BC to the same starting point and sweep an angle from AB to BC **clockwise**, I am 100% sure that you will always get an angle larger than $\pi$, unless the polygon is concave.
+Consider the definition of `ANGLE(m,n)`. This would basically mess up the whole algorithm. If you apply this algorithm to my polygon drawn above, you will see the loop that was supposed to find the first pair of antipodals will be terminated at the first check `angle(i, j) < pi`. If we move vector AB and vector BC to the same starting point and sweep an angle from AB to BC **clockwise**, I am 100% sure that you will always get an angle larger than $$\pi$$, unless the polygon is concave.
 
 Even if `ANGLE(m,n)` had been defined correctly, i.e. counterclockwise angle, the use of this function would have also had many other problems. The comparison between `angle(current, i+1)` and `angle(current, j+1)` is false by the logic of his idea. Two calipers, although represented as lines, when taken to calculate the angles, their directions must be opposite. Otherwise, one of the expression will be larger than pi, and the other will be smaller than pi, which is exactly happening in this algorithm. This led to the parallel edges being completely ignored. What is worse, the calipers are rotated incorrectly, the pivots are wrongly positioned. I have tested this myself, but I could not predict the cause behind, or what he actually meant in this implementation. This is because the mistake was rooted in the definition of a primitive function like `angle`, making analysing very difficult. I am certain that he was wrong, but to actually fix his pseudocode, I had no way but to rewrite the whole thing in my own way.
 
@@ -132,7 +132,7 @@ GetAllAntiPodalPairs(p[1..n])
 
 ### How do I know which edge the calipers will touch first?
 
-This came to the problem of comparing angles. Please slide to step 2, when we need to determine if the next rotation will make the calipers touch FG or CD first. We need to compare the angles at C and F. If we translate CD such that C $\equiv$ F. The two angles now have the same origin, and they are formed by one line and two segments. Considering the angle form by the two segments will give us a verdict of the comparison between the two original angles.
+This came to the problem of comparing angles. Please slide to step 2, when we need to determine if the next rotation will make the calipers touch FG or CD first. We need to compare the angles at C and F. If we translate CD such that C $$\equiv$$ F. The two angles now have the same origin, and they are formed by one line and two segments. Considering the angle form by the two segments will give us a verdict of the comparison between the two original angles.
 
 ### How do I know it will produce all pairs of antipodals?
 
