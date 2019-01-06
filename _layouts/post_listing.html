@@ -2,8 +2,8 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-{% if post.sticky == true %}
+{% for post in site.posts %}
+{% if post.sticky == true and paginator.page == 1 %}
 <section class="post">
     <header class="post-header">
       <p class="post-meta">
