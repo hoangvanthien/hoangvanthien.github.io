@@ -189,7 +189,7 @@ Vậy $$S_3$$ độc lập tuyến tính.
 
 Từ hai điều trên cho thấy $$S_3$$ là một cơ sở của $$\mathrm{Im}(T)$$, nên số chiều của $$\mathrm{Im}(T)$$ bằng số vector trong $$S_3$$ bằng $$n-k$$.
 
-Trong trường hợp $$k = 0$$, dễ thấy rằng $$\mathrm{Ker}(T) = \\{0\\}$$. Ta đặt $$S_2 = \\{v_1,\dots, v_n\\}$$ là một cơ sở của $$V$$ và chứng minh $$S_3 = \\{T(v_1),\dots, T(v_n)\\}$$ sinh ra $$\mathrm{Im}(T)$$ và độc lập tuyến tính:
+Trong trường hợp $$k = 0$$, dễ thấy rằng $$\mathrm{Ker}(T) = \{0\}$$. Ta đặt $$S_2 = \{v_1,\dots, v_n\}$$ là một cơ sở của $$V$$ và chứng minh $$S_3 = \{T(v_1),\dots, T(v_n)\}$$ sinh ra $$\mathrm{Im}(T)$$ và độc lập tuyến tính:
 
 $$
 \begin{aligned}
@@ -215,7 +215,7 @@ Vậy $$\mathrm{dim}(\mathrm{Im}(T)) = n$$.
 
 Trong trường hợp $$k = n$$, thêm yếu tố $$\mathrm{Ker}(T)$$ là không gian con của $$V$$, ta có $$\mathrm{Ker}(T) = V$$. Chọn $$S_2 = \{v_1,\dots,v_n\}$$ làm cơ sở của $$V$$.
 
-Như vậy, ta thấy $$T(v) \in \mathrm{Im}(T)$$ và $$T(v) = 0\ \forall v\in V$$. Tức là $$\mathrm{Im}(T) = \\{0\\}$$, suy ra số chiều bằng 0.
+Như vậy, ta thấy $$T(v) \in \mathrm{Im}(T)$$ và $$T(v) = 0\ \forall v\in V$$. Tức là $$\mathrm{Im}(T) = \{0\}$$, suy ra số chiều bằng 0.
 </div> <!--end proof-->
 
 ### Hệ quả

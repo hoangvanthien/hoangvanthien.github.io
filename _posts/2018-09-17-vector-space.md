@@ -11,20 +11,20 @@ Chúng ta đã biết khái niệm về vector hình học ở cấp 3. Chúng c
 
 Xét tập $$V$$ mà mỗi phần tử gọi là một vector và trường số thực $$\mathbb{R}$$. Giả sử ta có hai phép toán: phép cộng hai vector và phép nhân một vector với một số thực. $$V$$ là một không gian vector nếu nó thỏa mãn tất cả các điều sau:
 
-- $$(V, +)$$ là một nhóm Abelian có phần tử đơn vị ký hiệu là $$\overrightarrow{0}$$.
+- &nbsp;$$(V, +)$$ là một nhóm Abelian có phần tử đơn vị ký hiệu là $$\overrightarrow{0}$$.
 - Với $$a,b\in \mathbb{R}$$ và $$x,y\in V$$ ta có:
 
-    - $$ax\in V$$
-    - $$a(x+y) = ax+ay$$
-    - $$(a+b)x = ax+bx$$
-    - $$a(bx) = (ab)x$$
-    - $$1\times x = x$$
+    - &nbsp;$$ax\in V$$
+    - &nbsp;$$a(x+y) = ax+ay$$
+    - &nbsp;$$(a+b)x = ax+bx$$
+    - &nbsp;$$a(bx) = (ab)x$$
+    - &nbsp;$$1\times x = x$$
 
 Hệ quả:
 
-- $$0x = \overrightarrow{0}$$
-- $$-x = (-1)x$$
-- $$a\overrightarrow{0} = \overrightarrow{0}$$
+- &nbsp;$$0x = \overrightarrow{0}$$
+- &nbsp;$$-x = (-1)x$$
+- &nbsp;$$a\overrightarrow{0} = \overrightarrow{0}$$
 - Nếu $$kx=\overrightarrow{0}$$ thì hoặc $$k=0$$ hoặc $$x=\overrightarrow{0}$$.
 
 Nếu $$W\subset V$$ và phép cộng đóng kín trong $$W$$ và phép nhân với một số thực cũng đóng kín trong $$W$$ thì $$W$$ gọi là một _không gian con_ (_subspace_).
@@ -33,9 +33,9 @@ Nếu $$W\subset V$$ và phép cộng đóng kín trong $$W$$ và phép nhân v�
 
 ### Tổ hợp tuyến tính
 
-Cho một tập $$n$$ vector $$S=\\{x_1,x_2,\dots, x_n\\}$$ thuộc không gian vector $$V$$. Một _tổ hợp tuyến tính_ (_linear combination_) của $$n$$ vector này là một vector có dạng $$c_1x_1+c_2x_2+\dots+c_nx_n$$ trong đó $$c_i$$ là các hằng số thực. Tập $$W$$ gồm tất cả các tổ hợp tuyến tính được gọi là một _bao tuyến tính_ (_linear span_) của họ $$S$$, ký hiệu là $$\mathrm{span}(S)$$. Bản thân bao tuyến tính là một không gian vector, và đó là một không gian con của $$V$$.
+Cho một tập $$n$$ vector $$S=\{x_1,x_2,\dots, x_n\}$$ thuộc không gian vector $$V$$. Một _tổ hợp tuyến tính_ (_linear combination_) của $$n$$ vector này là một vector có dạng $$c_1x_1+c_2x_2+\dots+c_nx_n$$ trong đó $$c_i$$ là các hằng số thực. Tập $$W$$ gồm tất cả các tổ hợp tuyến tính được gọi là một _bao tuyến tính_ (_linear span_) của họ $$S$$, ký hiệu là $$\mathrm{span}(S)$$. Bản thân bao tuyến tính là một không gian vector, và đó là một không gian con của $$V$$.
 
-_Độc lập tuyến tính_ (aka _Linear Independence_) là một đặc điểm mô tả các họ vector $$S=\\{x_1,x_2,\dots, x_n\\}$$ nào có tính chất sau:
+_Độc lập tuyến tính_ (aka _Linear Independence_) là một đặc điểm mô tả các họ vector $$S=\{x_1,x_2,\dots, x_n\}$$ nào có tính chất sau:
 
 $$
 c_1x_1+c_2x_2+\dots+c_nx=0\\
@@ -50,7 +50,7 @@ Nói nôm na, độc lập tuyến tính (từ trái nghĩa: phụ thuộc tuy�
 
 Trong một không gian vector $$V$$, nếu có $$n$$ vector độc lập tuyến tính và không có quá $$n$$ vector độc lập tuyến tính thì $$V$$ được định nghĩa là một không gian $$n$$ chiều.
 
-Xét trong không gian vector và một cơ sở $$B$$ nào đó (xem thêm phần cơ sở ở dưới), ta biểu diễn $$S=\\{x_1,x_2,\dots, x_n\\}$$ dưới dạng ma trận $$M$$ gồm $$n$$ cột, mỗi cột là tọa độ của vector đối với cơ sở $$B$$ (xem thêm phần tọa độ ở dưới). Hạng của ma trận $$M$$ bằng hạng của họ vector $$S$$ và bằng số chiều của $$\mathrm{span}(S)$$.
+Xét trong không gian vector và một cơ sở $$B$$ nào đó (xem thêm phần cơ sở ở dưới), ta biểu diễn $$S=\{x_1,x_2,\dots, x_n\}$$ dưới dạng ma trận $$M$$ gồm $$n$$ cột, mỗi cột là tọa độ của vector đối với cơ sở $$B$$ (xem thêm phần tọa độ ở dưới). Hạng của ma trận $$M$$ bằng hạng của họ vector $$S$$ và bằng số chiều của $$\mathrm{span}(S)$$.
 
 ### Cơ sở
 
@@ -60,9 +60,9 @@ Như vậy, hiển nhiên $$S$$ độc lập tuyến tính là cơ sở của $$
 
 Ngoài ra, $$S$$ là một cơ sở của $$V$$ nếu và chỉ nếu mỗi vector trong $$V$$ luôn có một tổ hợp tuyến tính duy nhất từ cơ sở của $$V$$.
 
-Trong không gian vector $$n$$ chiều, một cơ sở $$S=\\{v_1, v_2,\dots,v_n\\}$$ gọi là cơ sở _chính tắc_ (_standard basis_) nếu $$v_i$$ là một vector có thành phần thứ $$i$$ bằng 1 và những thành phần còn lại bằng 0 (có dạng $$v_i = (0\ 0\ \dots\ 0\ 1\ 0\ 0\dots\ 0)$$).
+Trong không gian vector $$n$$ chiều, một cơ sở $$S=\{v_1, v_2,\dots,v_n\}$$ gọi là cơ sở _chính tắc_ (_standard basis_) nếu $$v_i$$ là một vector có thành phần thứ $$i$$ bằng 1 và những thành phần còn lại bằng 0 (có dạng $$v_i = (0\ 0\ \dots\ 0\ 1\ 0\ 0\dots\ 0)$$).
 
-**Bổ đề Steinitz**: Nếu ta có $$S = \\{v_1, v_2,\dots,v_r\\}$$ là một họ vector độc lập tuyến tính trong không gian $$n$$ chiều $$V$$ ($$r < n$$) thì ta có thể bổ sung $$n-r$$ vector nữa để hình thành một cơ sở của $$V$$.
+**Bổ đề Steinitz**: Nếu ta có $$S = \{v_1, v_2,\dots,v_r\}$$ là một họ vector độc lập tuyến tính trong không gian $$n$$ chiều $$V$$ ($$r < n$$) thì ta có thể bổ sung $$n-r$$ vector nữa để hình thành một cơ sở của $$V$$.
 
 ## Tích vô hướng
 
@@ -74,11 +74,11 @@ $$
 
 Tuy nhiên trong một không gian vector bất kỳ, tích vô hướng có thể mang những dịnh nghĩa khác nhau. Dưới đây là 5 tiên đề để một phép tính được công nhận là tích vô hướng:
 
-- $$\langle a,b\rangle$$ là một số xác định với mọi vector $$a,b$$
-- $$\langle a,b\rangle = \langle b,a\rangle$$
-- $$\langle a+b,c\rangle = \langle a,c\rangle + \langle b,c\rangle$$
-- $$\langle ka,b\rangle = k\langle a,b\rangle$$ với $$k$$ là một số
-- $$\langle a,a\rangle \geq 0$$ và $$\langle a,a\rangle=0 \Leftrightarrow a=\overrightarrow{0}$$
+- &nbsp;$$\langle a,b\rangle$$ là một số xác định với mọi vector $$a,b$$
+- &nbsp;$$\langle a,b\rangle = \langle b,a\rangle$$
+- &nbsp;$$\langle a+b,c\rangle = \langle a,c\rangle + \langle b,c\rangle$$
+- &nbsp;$$\langle ka,b\rangle = k\langle a,b\rangle$$ với $$k$$ là một số
+- &nbsp;$$\langle a,a\rangle \geq 0$$ và $$\langle a,a\rangle=0 \Leftrightarrow a=\overrightarrow{0}$$
 
 Ví dụ khác: Ta đã biết tập hợp tất cả các hàm liên tục trên $$\[a,b\]$$ là một không gian vector. Tích vô hướng của không gian này có thể được định nghĩa như sau:
 
@@ -100,10 +100,10 @@ $$
 |\langle u,v\rangle| \leq \|u\|\times\|v\|
 $$
 
-- $$‖v‖\geq 0$$
-- $$‖v‖=0 \Leftrightarrow v=\overrightarrow{0}$$
-- $$‖kv‖ = \|k\|‖v‖$$
-- $$‖u+v‖ \leq ‖u‖ + ‖v‖$$
+- &nbsp;$$‖v‖\geq 0$$
+- &nbsp;$$‖v‖=0 \Leftrightarrow v=\overrightarrow{0}$$
+- &nbsp;$$‖kv‖ = \|k\|‖v‖$$
+- &nbsp;$$‖u+v‖ \leq ‖u‖ + ‖v‖$$
 
 ### Khoảng cách giữa hai vector
 
@@ -115,7 +115,7 @@ $$
 
 Tính chất:
 
-- $$d(u,v) = d(v,u)$$
+- &nbsp;$$d(u,v) = d(v,u)$$
 - Bất đẳng thức tam giác: $$d(u,v) \leq d(u,w) + d(w,v)$$
 
 ## Trực giao
@@ -124,7 +124,7 @@ Hai vector vuông góc với nhau (còn gọi là trực giao -- _orthogonal_) k
 
 Họ trực giao của các vector khác 0 luôn luôn là họ độc lập tuyến tính.
 
-Nếu một không gian $$n$$ chiều có cơ sở là một họ trực chuẩn $$S=\\{v_1, v_2,\dots,v_n\\}$$ thì mọi vector $$u$$ trong không gian đó có thể biểu diễn dưới dạng sau:
+Nếu một không gian $$n$$ chiều có cơ sở là một họ trực chuẩn $$S=\{v_1, v_2,\dots,v_n\}$$ thì mọi vector $$u$$ trong không gian đó có thể biểu diễn dưới dạng sau:
 
 $$
 u = \langle u,v_1\rangle v_1 + \langle u,v_2\rangle v_2 + \dots + \langle u,v_n\rangle v_n
@@ -132,7 +132,7 @@ $$
 
 ### Hình chiếu của một vector lên không gian con
 
-Giả sử $$S=\\{v_1, v_2,\dots,v_m\\}$$ là một họ trực chuẩn các vector trong $$V$$. Gọi $$W=\mathrm{span}(S)$$ là không gian con của $$V$$. Hình chiếu trực giao (đặt là $$w$$) của vector $$u$$ bất kỳ trong $$V$$ lên không gian con $$W$$ là một vector thuộc $$W$$ và $$u-w$$ trực giao với mọi vector trong $$W$$. Hình chiếu trực giao được tính bằng công thức sau:
+Giả sử $$S=\{v_1, v_2,\dots,v_m\}$$ là một họ trực chuẩn các vector trong $$V$$. Gọi $$W=\mathrm{span}(S)$$ là không gian con của $$V$$. Hình chiếu trực giao (đặt là $$w$$) của vector $$u$$ bất kỳ trong $$V$$ lên không gian con $$W$$ là một vector thuộc $$W$$ và $$u-w$$ trực giao với mọi vector trong $$W$$. Hình chiếu trực giao được tính bằng công thức sau:
 
 $$
 w = \langle u,v_1\rangle v_1 + \langle u,v_2\rangle v_2 + \dots + \langle u,v_m\rangle v_m
@@ -154,7 +154,7 @@ Như vậy biểu thức $$w$$ là công thức đúng.
 
 ### Quá trình Gram-Schmidt
 
-Cho một không gian vector $$V$$ có cơ sở $$S=\\{v_1, v_2,\dots,v_n\\}$$. Phương pháp biến đổi $$S$$ thành một họ trực giao $$S'=\\{u_1, u_2,\dots,u_n\\}$$ sao cho $$\mathrm{span}(S') = V$$ gọi là quá trình trực giao hóa. Một trong những phương pháp đó là quá trình Gram-Schmidt:
+Cho một không gian vector $$V$$ có cơ sở $$S=\{v_1, v_2,\dots,v_n\}$$. Phương pháp biến đổi $$S$$ thành một họ trực giao $$S'=\{u_1, u_2,\dots,u_n\}$$ sao cho $$\mathrm{span}(S') = V$$ gọi là quá trình trực giao hóa. Một trong những phương pháp đó là quá trình Gram-Schmidt:
 
 - $$u_1 = v_1,\ \eta_1 = \frac{u_1}{|u_1|}$$
 - $$u_2 = v_2 - w_2,\ \eta_2 = \frac{u_2}{|u_2|}$$
@@ -167,7 +167,7 @@ Kết thúc $$n$$ bước ta có $$\{\eta_1, \dots, \eta\_{i-1}\}$$ là họ đ�
 
 ## Tọa độ
 
-Giả sử $$S=\\{v_1, v_2,\dots,v_n\\}$$ là một họ các vector độc lập tuyến tính sinh ra $$V$$. Như đã đề cập ở trên, mọi vector $$u\in V$$ được biểu diễn bằng một tổ hợp tuyến tính các vector trong cơ sở:
+Giả sử $$S=\{v_1, v_2,\dots,v_n\}$$ là một họ các vector độc lập tuyến tính sinh ra $$V$$. Như đã đề cập ở trên, mọi vector $$u\in V$$ được biểu diễn bằng một tổ hợp tuyến tính các vector trong cơ sở:
 
 $$
 u = c_1v_1 + c_2v_2 + \dots + c_nv_n
@@ -222,8 +222,8 @@ Ma trận $$P$$ được gọi là ma trận chuyển đổi (_change-of-basis m
 - Dựng các vector trong cơ sở $$S$$ và $$S'$$ thành các cột, tạo nên hai ma trận lần lượt là $$A$$ và $$B$$.
 - Tính $$P = B^{-1}A$$.
 
-Khi được biết biểu diễn $$\[u\]\_B$$, ta có thể tính $$\[u\]\_{B'} = P\[u\]\_B$$.
-Ngược lại, khi biết $$\[u\]\_{B'}$$, ta có thể tính $$\[u\]\_B = P^{-1}\[u\]\_{B'}$$.
+Khi được biết biểu diễn $$[u]_B$$, ta có thể tính $$[u]_{B'} = P[u]_B$$.
+Ngược lại, khi biết $$[u]_{B'}$$, ta có thể tính $$[u]_B = P^{-1}[u]_{B'}$$.
 
 Thật vậy, giả sử chúng ta biểu diễn mỗi vector $$v_1, \dots, v_n$$ qua cơ sở mới $$S'$$ như sau:
 
@@ -249,7 +249,7 @@ $$
 
 Viết gọn hơn là: $$A = BP \Leftrightarrow P = B^{-1}A$$
 
-Xét một vector $$u$$ có tọa độ $$\[u\]\_S = (x_1, \dots, x_n)$$ và $$\[u\]\_{S'} = (y_1, \dots, y_n)$$
+Xét một vector $$u$$ có tọa độ $$[u]_S = (x_1, \dots, x_n)$$ và $$[u]_{S'} = (y_1, \dots, y_n)$$
 
 $$
 \begin{aligned}
@@ -266,7 +266,7 @@ Lập luận tương tự, với $$P^{-1} = A^{-1}B$$ chính là ma trận chuy�
 
 </div>
 
-> Side note: Việc gọi $$P$$ là ma trận chuyển cơ sở cần đi kèm với công thức $$\[u\]\_S = P\[u\]\_{S'}$$ để cho thấy sự liên hệ toán học rõ ràng giữa hai tọa độ. Cách nói "chuyển từ cơ sở $$S$$ sang $$S'$$" vẫn chưa đầy đủ và dễ gây hiểu nhầm.
+> Side note: Việc gọi $$P$$ là ma trận chuyển cơ sở cần đi kèm với công thức $$[u]_S = P[u]_{S'}$$ để cho thấy sự liên hệ toán học rõ ràng giữa hai tọa độ. Cách nói "chuyển từ cơ sở $$S$$ sang $$S'$$" vẫn chưa đầy đủ và dễ gây hiểu nhầm.
 
 ### Tính chất
 
