@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Expected value of a random divisor selector"
-categories: "Mathematics"
+categories: ["Mathematics", "Algorithms"]
 excerpt-seperator: <!--more-->
 ---
 
