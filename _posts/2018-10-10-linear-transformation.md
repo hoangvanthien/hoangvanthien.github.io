@@ -140,6 +140,8 @@ $$
 
 Ta sẽ chứng minh $$S_3$$ là họ độc lập tuyến tính và sinh ra $$\mathrm{Im}(T)$$.
 
+<hr width="50%">
+
 - &nbsp;$$S_3$$ sinh ra $$\mathrm{Im}(T)$$:
 
 Xét $$v\in V$$, ta có:
@@ -161,6 +163,8 @@ $$
 (nhắc lại, $$v_i\in \mathrm{Ker}(T)$$ với $$i \leq k$$, nên $$T(v_i) = 0$$)
 
 Như vậy, $$S_3$$ sinh ra $$\mathrm{Im}(T)$$.
+
+<hr width="50%">
 
 - &nbsp;$$S_3$$ là độc lập tuyến tính.
 
@@ -186,6 +190,8 @@ $$
 Mà $$S_2$$ là cơ sở của $$V$$, nên rút ra được rằng $$c_i=0\ \forall i$$. Suy ra rằng $$c_{k+1} = \dots = c_n = 0$$.
 
 Vậy $$S_3$$ độc lập tuyến tính.
+
+<hr width="50%">
 
 Từ hai điều trên cho thấy $$S_3$$ là một cơ sở của $$\mathrm{Im}(T)$$, nên số chiều của $$\mathrm{Im}(T)$$ bằng số vector trong $$S_3$$ bằng $$n-k$$.
 

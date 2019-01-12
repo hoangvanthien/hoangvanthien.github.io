@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flaws in Michael Shamos' implementation of Rotating Calipers, proposed in \"Computational Geometry\" (1978)"
-categories: ["Algorithm"]
+categories: ["Algorithms"]
 excerpt-seperator: <!--more-->
 sticky: true
 ---
