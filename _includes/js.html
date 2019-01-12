@@ -51,7 +51,7 @@
 
 <script>
     $("script[type='math/tex']").replaceWith(function() {
-        var tex = $(this).text();
+        var tex = $(this).html();
         return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: false});
     });
 </script>

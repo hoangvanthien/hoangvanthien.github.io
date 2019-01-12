@@ -80,7 +80,7 @@ Tuy nhiên trong một không gian vector bất kỳ, tích vô hướng có th�
 - &nbsp;$$\langle ka,b\rangle = k\langle a,b\rangle$$ với $$k$$ là một số
 - &nbsp;$$\langle a,a\rangle \geq 0$$ và $$\langle a,a\rangle=0 \Leftrightarrow a=\overrightarrow{0}$$
 
-Ví dụ khác: Ta đã biết tập hợp tất cả các hàm liên tục trên $$\[a,b\]$$ là một không gian vector. Tích vô hướng của không gian này có thể được định nghĩa như sau:
+Ví dụ khác: Ta đã biết tập hợp tất cả các hàm liên tục trên $$[a,b]$$ là một không gian vector. Tích vô hướng của không gian này có thể được định nghĩa như sau:
 
 $$
 \langle f,g\rangle = \int^b_a f(x)g(x)dx
@@ -90,20 +90,22 @@ Không gian vector $$n$$ chiều có trang bị một tích vô hướng gọi l
 
 ### Độ dài của vector
 
-Độ dài của vector $$v$$ ký hiệu là $$\vert v\vert $$ hoặc $$\vert v\vert $$, bằng căn bậc hai của tích vô hướng của $$v$$ và chính nó, tức là $$\sqrt{\langle v,v\rangle}$$
+Độ dài của vector $$v$$ ký hiệu là $$\vert v\vert$$, bằng căn bậc hai của tích vô hướng của $$v$$ và chính nó, tức là $$\sqrt{\langle v,v\rangle}$$
 
 Các tính chất:
 
 - Bất đẳng thức Cauchy-Schwarz chỉ ra rằng:
 
 $$
-|\langle u,v\rangle| \leq \vert u\vert \times\vert v\vert 
+\vert\langle u,v\rangle\vert \leq \vert u\vert \times\vert v\vert 
 $$
 
-- &nbsp;$$\vert v\vert \geq 0$$
-- &nbsp;$$\vert v\vert =0 \Leftrightarrow v=\overrightarrow{0}$$
-- &nbsp;$$\vert kv\vert  = \vert k\vert \vert v\vert $$
-- &nbsp;$$\vert u+v\vert  \leq \vert u\vert  + \vert v\vert $$
+&nbsp;
+
+- &nbsp; $$\vert v\vert \geq 0$$
+- &nbsp; $$\vert v\vert =0 \Leftrightarrow v=\overrightarrow{0}$$
+- &nbsp; $$\vert kv\vert  = \vert k\vert \vert v\vert $$
+- &nbsp; $$\vert u+v\vert  \leq \vert u\vert  + \vert v\vert$$
 
 ### Khoảng cách giữa hai vector
 

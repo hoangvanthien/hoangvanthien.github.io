@@ -49,7 +49,7 @@ $$f(n)=\mathrm{max}(g(\alpha)),\ \forall \alpha\in P_n\\
 \Rightarrow f(n)\geq g(\sigma) = t
 $$
 
-I cannot tell the exact value of $$f(n)$$, but I can use $$t$$ as the new upper bound instead of $$t$$. If we can partition _any_ permutation into at most $$t$$ subsequences, since we're guaranteed that $$t\leq f(n)$$, such a solution will be immediately valid. We're close to solving the problem. 
+I cannot tell the exact value of $$f(n)$$, but I can use $$t$$ as the new upper bound instead of $$f(n)$$. If we can partition _any_ permutation into at most $$t$$ subsequences, since we're guaranteed that $$t\leq f(n)$$, such a solution will be immediately valid. We're close to solving the problem. 
 
 ## How to partition a permutation of $$n$$ into at most $$t$$ subsequences?
 
