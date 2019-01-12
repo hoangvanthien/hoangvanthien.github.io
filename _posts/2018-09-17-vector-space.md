@@ -33,34 +33,41 @@ Nếu $$W\subset V$$ và phép cộng đóng kín trong $$W$$ và phép nhân v�
 
 ### Tổ hợp tuyến tính
 
-Cho một tập $$n$$ vector $$S=\{x_1,x_2,\dots, x_n\}$$ thuộc không gian vector $$V$$. Một _tổ hợp tuyến tính_ (_linear combination_) của $$n$$ vector này là một vector có dạng $$c_1x_1+c_2x_2+\dots+c_nx_n$$ trong đó $$c_i$$ là các hằng số thực. Tập $$W$$ gồm tất cả các tổ hợp tuyến tính được gọi là một _bao tuyến tính_ (_linear span_) của họ $$S$$, ký hiệu là $$\mathrm{span}(S)$$. Bản thân bao tuyến tính là một không gian vector, và đó là một không gian con của $$V$$.
+Cho một tập $$n$$ vector $$S=\{v_1,v_2,\dots, v_n\}$$ thuộc không gian vector $$V$$. Một _tổ hợp tuyến tính_ (_linear combination_) của $$n$$ vector này là một vector có dạng $$c_1v_1+c_2v_2+\dots+c_nv_n$$ trong đó $$c_i$$ là các hằng số thực. Tập $$W$$ gồm tất cả các tổ hợp tuyến tính được gọi là một _bao tuyến tính_ (_linear span_) của họ $$S$$, ký hiệu là $$\mathrm{span}(S)$$. Bản thân bao tuyến tính là một không gian vector, và đó là một không gian con của $$V$$.
 
-_Độc lập tuyến tính_ (aka _Linear Independence_) là một đặc điểm mô tả các họ vector $$S=\{x_1,x_2,\dots, x_n\}$$ nào có tính chất sau:
+_Độc lập tuyến tính_ (aka _Linear Independence_) là một đặc điểm mô tả các họ vector $$S=\{v_1,v_2,\dots, v_n\}$$ nào có tính chất sau:
 
 $$
-c_1x_1+c_2x_2+\dots+c_nx=0\\
+c_1v_1+c_2v_2+\dots+c_nv_n=0\\
 \Leftrightarrow c_1=c_2=\dots=c_n=0
 $$
 
-Giả sử dựng ma trận $$A$$ với mỗi cột là tọa độ của các vector trong $$S$$, và đồng thời $$V$$ là một không gian $$n$$ chiều (tức $$A$$ là ma trận vuông), thì phương trình $$c_1x_1+c_2x_2+\dots+c_nx=0$$ có thể được viết thành hệ phương trình thuần nhất. Lúc này để hệ có nghiệm duy nhất, $$\mathrm{det}(A)\neq 0$$. Đây cũng là điều kiện cần và đủ để $$S$$ là một họ độc lập tuyến tính.
+Giả sử dựng ma trận $$A$$ với mỗi cột là tọa độ của các vector trong $$S$$, và đồng thời $$V$$ là một không gian $$n$$ chiều (tức $$A$$ là ma trận vuông), thì phương trình $$c_1v_1+c_2v_2+\dots+c_nv_n=0$$ có thể được viết thành hệ phương trình thuần nhất. Lúc này để hệ có nghiệm duy nhất, $$\mathrm{det}(A)\neq 0$$. Đây cũng là điều kiện cần và đủ để $$S$$ là một họ độc lập tuyến tính.
 
-Nói nôm na, độc lập tuyến tính (từ trái nghĩa: phụ thuộc tuyến tính) có nghĩa là không tồn tại bất cứ $$x_i$$ nào có thể được biểu diễn bằng một tổ hợp tuyến tính từ $$n-1$$ vector còn lại. Định nghĩa toán học thực sự sẽ phức tạp hơn và khó hình dung hơn cách diễn đạt này.
+Nói nôm na, độc lập tuyến tính (từ trái nghĩa: phụ thuộc tuyến tính) có nghĩa là không tồn tại bất cứ $$v_i$$ nào có thể được biểu diễn bằng một tổ hợp tuyến tính từ $$n-1$$ vector còn lại. Định nghĩa toán học thực sự sẽ phức tạp hơn và khó hình dung hơn cách diễn đạt này.
 
 ### Không gian $$n$$ chiều
 
 Trong một không gian vector $$V$$, nếu có $$n$$ vector độc lập tuyến tính và không có quá $$n$$ vector độc lập tuyến tính thì $$V$$ được định nghĩa là một không gian $$n$$ chiều.
 
-Xét trong không gian vector và một cơ sở $$B$$ nào đó (xem thêm phần cơ sở ở dưới), ta biểu diễn $$S=\{x_1,x_2,\dots, x_n\}$$ dưới dạng ma trận $$M$$ gồm $$n$$ cột, mỗi cột là tọa độ của vector đối với cơ sở $$B$$ (xem thêm phần tọa độ ở dưới). Hạng của ma trận $$M$$ bằng hạng của họ vector $$S$$ và bằng số chiều của $$\mathrm{span}(S)$$.
-
 ### Cơ sở
 
-Một họ $$n$$ vector $$S$$ độc lập tuyến tính trong không gian $$n$$ chiều $$V$$ được gọi là một _cơ sở_ (_basis_, số nhiều _bases_).
+Một họ $$n$$ vector $$S=\{v_1,v_2,\dots, v_n\}$$ độc lập tuyến tính trong không gian $$n$$ chiều $$V$$ được gọi là một _cơ sở_ (_basis_, số nhiều _bases_). Nếu $$S$$ là cơ sở của $$V$$ và ta có $$u\in V$$, $$u = c_1v_1 + \dots + c_nv_n$$ thì $$(c_1, \dots, c_n)$$ được gọi là tọa độ của $$u$$ dưới cơ sở $$S$$.
 
-Như vậy, hiển nhiên $$S$$ độc lập tuyến tính là cơ sở của $$\mathrm{span}(S)$$.
+Trong không gian vector $$n$$ chiều, một cơ sở $$S=\{v_1, v_2,\dots,v_n\}$$ gọi là cơ sở _chính tắc_ (_standard basis_) nếu $$v_i$$ là một vector có thành phần thứ $$i$$ bằng 1 và những thành phần còn lại bằng 0 (có dạng $$v_i = (0\ 0\ \dots\ 0\ 1\ 0\ 0\dots\ 0)$$). Thông thường, nếu không nêu rõ cơ sở của một không gian thì ta thường ngầm hiểu và sử dụng cơ sở chính tắc cho thuận tiện.
 
-Ngoài ra, $$S$$ là một cơ sở của $$V$$ nếu và chỉ nếu mỗi vector trong $$V$$ luôn có một tổ hợp tuyến tính duy nhất từ cơ sở của $$V$$.
+Một số tính chất đáng lưu ý:
 
-Trong không gian vector $$n$$ chiều, một cơ sở $$S=\{v_1, v_2,\dots,v_n\}$$ gọi là cơ sở _chính tắc_ (_standard basis_) nếu $$v_i$$ là một vector có thành phần thứ $$i$$ bằng 1 và những thành phần còn lại bằng 0 (có dạng $$v_i = (0\ 0\ \dots\ 0\ 1\ 0\ 0\dots\ 0)$$).
+- &nbsp;$$S$$ độc lập tuyến tính $$\Leftrightarrow$$ $$S$$ là cơ sở của $$\mathrm{span}(S)$$.
+- &nbsp;$$S$$ là một cơ sở của $$V \Leftrightarrow$$ mỗi vector trong $$V$$ luôn có một tổ hợp tuyến tính của $$S$$.
+
+Ta biểu diễn $$S=\{v_1,v_2,\dots, v_n\}$$ dưới dạng ma trận $$M$$ gồm $$n$$ cột ($$M$$ có thể không vuông), mỗi cột là tọa độ của vector đối với cơ sở $$B$$ nào đó. Hạng của họ vector $$S$$ được định nghĩa bằng hạng của $$M$$. Khi đó:
+
+$$
+\rho(M) = \rho(S) = \mathrm{dim(span(}S\mathrm{))}
+$$
+
+Gọi $$M^*$$ là row-echelon form của $$M$$ với $$\{j_1, \dots, j_n\}$$ là các pivot column, khi đó $$\{v_{j_1}, \dots, v_{j_n}\}$$ là basis của $$\mathrm{span}(S)$$.
 
 **Bổ đề Steinitz**: Nếu ta có $$S = \{v_1, v_2,\dots,v_r\}$$ là một họ vector độc lập tuyến tính trong không gian $$n$$ chiều $$V$$ ($$r < n$$) thì ta có thể bổ sung $$n-r$$ vector nữa để hình thành một cơ sở của $$V$$.
 
