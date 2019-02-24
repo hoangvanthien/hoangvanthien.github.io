@@ -3,7 +3,6 @@ layout: post
 title: "Flaws in Michael Shamos' implementation of Rotating Calipers, proposed in \"Computational Geometry\" (1978)"
 categories: ["Algorithms"]
 excerpt-seperator: <!--more-->
-sticky: true
 ---
 
 I was studying Rotating Calipers the other day, and like many other people, I jumped to Wikipedia as soon as I found it in the result pages. [Wikipedia - Rotating Calipers](https://en.wikipedia.org/wiki/Rotating_calipers). This particular page was a stub. It contained very few information and description about the algorithms, let alone the visuals to support.

@@ -2,7 +2,12 @@
 layout: post
 title: "Regular Languages"
 categories: ["Notes", "Theoretical CS"]
+excerpt-separator: <!--more-->
 ---
+
+In this post, we will discuss the concepts surrounding the topic "Regular Languages" like DFA, NFA, regular expressions, and two important theorems, the pumping lemma and Myhill-Nerode theorem.
+
+<!--more-->
 
 ## Finite automaton
 
