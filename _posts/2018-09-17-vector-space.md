@@ -231,8 +231,8 @@ Ma trận $$P$$ được gọi là ma trận chuyển đổi (_change-of-basis m
 - Dựng các vector trong cơ sở $$S$$ và $$S'$$ thành các cột, tạo nên hai ma trận lần lượt là $$A$$ và $$B$$.
 - Tính $$P = B^{-1}A$$.
 
-Khi được biết biểu diễn $$[u]_B$$, ta có thể tính $$[u]_{B'} = P[u]_B$$.
-Ngược lại, khi biết $$[u]_{B'}$$, ta có thể tính $$[u]_B = P^{-1}[u]_{B'}$$.
+Khi được biết biểu diễn $$[u]_S$$, ta có thể tính $$[u]_{S'} = P[u]_S$$.
+Ngược lại, khi biết $$[u]_{S'}$$, ta có thể tính $$[u]_S = P^{-1}[u]_{S'}$$.
 
 Thật vậy, giả sử chúng ta biểu diễn mỗi vector $$v_1, \dots, v_n$$ qua cơ sở mới $$S'$$ như sau:
 
