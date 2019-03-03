@@ -1,0 +1,103 @@
+\documentclass[]{article}
+
+%%%% These packages make this work. Don't mess with these
+\usepackage{times}
+\usepackage{ulem}
+\usepackage[nocenter]{qtree}
+\usepackage{tree-dvips}
+\usepackage{gb4e}
+
+%Title/header info 
+\title{Template for Tree-Drawing}
+\author{LGCS 105: Syntax}
+
+\begin{document}
+
+\Tree[
+    .Sentence [
+        .Noun-phrase [
+            .Complex-noun [
+                .Article 
+                \texttt{the}
+            ] [
+                .Noun
+                \texttt{boy}
+            ]
+        ]
+    ] [
+        .Verb-phrase [
+            .Complex-verb [
+                .Verb
+                \texttt{cuts}
+            ] [
+                .Noun-phrase [
+                    .Complex-noun [
+                        .Article
+                        \texttt{the}
+                    ] [
+                        .Noun
+                        \texttt{girl}
+                    ]
+                ]
+            ]
+        ] [
+            .Preposition-phrase [
+                .Preposition
+                \texttt{with}
+            ] [
+                .Complex-noun [
+                    .Article
+                    \texttt{a}
+                ] [
+                    .Noun
+                    \texttt{knife}
+                ]
+            ]
+        ]
+    ]
+]
+
+\Tree[
+    .Sentence [
+        .Noun-phrase [
+            .Complex-noun [
+                .Article 
+                \texttt{the}
+            ] [
+                .Noun
+                \texttt{boy}
+            ]
+        ]
+    ] [
+        .Verb-phrase [
+            .Complex-verb [
+                .Verb
+                \texttt{cuts}
+            ] [
+                .Noun-phrase [
+                    .Complex-noun [
+                        .Article
+                        \texttt{the}
+                    ] [
+                        .Noun
+                        \texttt{girl}
+                    ]
+                ] [
+                    .Preposition-phrase [
+                        .Preposition
+                        \texttt{with}
+                    ] [
+                        .Complex-noun [
+                            .Article
+                            \texttt{a}
+                        ] [
+                            .Noun
+                            \texttt{knife}
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{document}
