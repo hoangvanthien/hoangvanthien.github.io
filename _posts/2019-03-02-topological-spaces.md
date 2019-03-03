@@ -18,9 +18,11 @@ Recently, I started reading the book "Topology Without Tears" by Sidney Morris. 
 
 The pair $$(X, \tau)$$ is called a topological space.
 
-When $$\tau = \mathcal{P}(X)$$, it is called a <span style="color:red">discrete topology</span> on _X_. Together they form a <span style="color:red">discrete topological space</span>.
+When $$\tau = \mathcal{P}(X)$$, it is called the <span style="color:red">discrete topology</span> on _X_. Together they form the <span style="color:red">discrete topological space</span>.
 
-When $$\tau = \{\emptyset, X\}$$, it is called a <span style="color:red">indiscrete topology</span> on _X_. Together they form a <span style="color:red">indiscrete topological space</span>.
+When $$\tau = \{\emptyset, X\}$$, it is called the <span style="color:red">indiscrete topology</span> on _X_. Together they form the <span style="color:red">indiscrete topological space</span>.
+
+> Notice the article "**the** (in)discrete topo", it means for a non-empty set _X_, there is exactly ONE such topo.
 
 **Theorem.** If $$(X,\tau)$$ is a topological space (from now abbreviated as t.s.) such that for every element $$x\in X$$, the <span style="color:red">singleton set</span> $$\{x\}\in\tau$$, then $$\tau$$ is a discrete topology (from now abbreviated as topo).
 
@@ -45,8 +47,6 @@ If _S_ is both an open and a closed set, we call it a <span style="color:red">cl
 which also means that the open sets are $$\emptyset$$ and subsets of _X_ that have finite complements.
 
 > **"consist of"** is different from **"include"**. When way say "the closed subsets of _X_ consist of _X_ and all finite subsets of _X_", it means **no** sets other than the specified sets are closed, **only** _X_ and all finite subsets of _X_ are closed.
-
-> Also notice the article "**the** finite-closed topo", it means for a non-empty set _X_, there is exactly ONE finite-closed topo.
 
 Infinite sets are not necessarily open sets. If the complement of an infinite set is also an infinite set, it is definitely not an open set.
 
@@ -86,3 +86,49 @@ Let _X_ be an infinite set. The <span style="color:red">countable-closed topolog
 
 A topo space $$(X,\tau)$$ is called a <span style="color:red">door space</span> if every subset of _X_ is open or closed.
 
+## Some topologies on $$\mathbb{R}$$
+
+- The discrete topology
+- The indiscrete topology
+- The finite-closed topology
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _(-n, n)_ for _n_ positive integer. <span onClick="toggleShowHide('sol1')" class="toggleButton" markdown="1"> &#x25B6; Why?</span>
+
+<div id="sol1" class="toggleContent" markdown="1">
+
+We can safely say that $$\tau$$ is countable. Let's prove that any union of elements in $$\tau$$ is also in $$\tau$$.
+
+$$
+S = \bigcup_{n\in I} (-n, n),\ \mathrm{where}\ I\subseteq \mathbb{N}^+
+$$
+
+If _I_ is finite, $$S=(-m,m)$$ where _m_ is the maximum element in _I_, hence it is also in $$\tau$$. Otherwise, _I_ is infinite and equal to $$\mathbb{N}^+$$, hence $$S=\mathbb{R}\in\tau$$.
+
+It is easy to prove the intersection between two sets in $$\tau$$ is also in $$\tau$$.
+
+</div>
+
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _[-n, n]_ for _n_ positive integer.
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval $$[n,\infty)$$ for _n_ positive integer.
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _(-r, r)_ for _r_ positive real.
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _[-r, r]_ and interval _(-r, r)_ for _r_ positive real.
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _[-n, n]_ and interval _(-r, r)_ for _n_ positive integer and _r_ positive real.
+
+### Not a topology on $$\mathbb{R}$$
+
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _[-r, r]_ for _r_ positive real. <span onClick="toggleShowHide('sol2')" class="toggleButton" markdown="1"> &#x25B6; Why?</span>
+<div id="sol2" class="toggleContent" markdown="1">
+
+You can always find some infinite monotonic increasing sequence of real number that converges to a real value _r_, but never precisely reach _r_. The infinite union of sets derived from the sequence converges to $$(-r,r)\notin\tau$$.
+
+</div>
+
+- &nbsp;$$\tau$$ consists of $$\mathbb{R}, \emptyset$$, and every interval _(-q, q)_ for _q_ positive rational. <span onClick="toggleShowHide('sol3')" class="toggleButton" markdown="1"> &#x25B6; Why?</span>
+<div id="sol3" class="toggleContent" markdown="1">
+
+You can find some infinite monotonic increasing sequence of **rational** number that converges to an **irrational** number, e.g. partial sums of the Maclaurin series representation of $$e$$.
+
+</div>
+
+## Reference sources
+
+1. [Sidney Morris - "Topology Without Tears"](topologywithouttears.net/topbook.pdf)
