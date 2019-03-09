@@ -46,6 +46,8 @@ Examples:
 
 It has been proven that $$A$$ is not a closed set, but $$A\cup\{0\}$$ is a closed set, and also the smallest closed set containing _A_, hence it is the closure of _A_.
 
+</div>
+
 - The closure of $$\mathbb{Q}$$ in $$\mathbb{R}$$ is $$\mathbb{R}$$. <span onClick="toggleShowHide('fekqoijr')" class="toggleButton" markdown="1"> &#x25B6; Proof</span>
 <div id="fekqoijr" class="toggleContent" markdown="1">
 
@@ -55,8 +57,6 @@ Suppose that $$\bar{\mathbb{Q}}\neq\mathbb{R}$$, i.e. $$\forall x\in \mathbb{R}-
 
 - The closure of $$\mathbb{Z}$$ in $$\mathbb{R}$$ is $$\mathbb{Z}$$ because it is a closed set.
 - The closure of $$\mathbb{I}$$ in $$\mathbb{R}$$ is $$\mathbb{R}$$ because any interval $$(a,b)$$ contains infinitely many irrational numbers, hence intersect $$\mathbb{I}$$ non-trivially.
-
-</div>
 
 
 **Definition.** Let _A_ be a subset of a topo space $$(X,\mathcal{T})$$. We say _A_ is <span style="color:red">dense</span> in _X_ (aka <span style="color:red">everywhere dense</span>) if $$\bar{A}=X$$.
