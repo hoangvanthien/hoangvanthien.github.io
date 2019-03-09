@@ -147,3 +147,7 @@ There are four steps to convert a grammar to its Chomsky normal form:
 ## Reference sources
 
 1. Michael Sipser - "Introduction to the Theory of Computation" (3rd ed.)
+
+<hr>
+
+Special thanks to Uyen Phuong for helping edit the images in this post.

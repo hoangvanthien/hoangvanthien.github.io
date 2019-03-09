@@ -251,3 +251,8 @@ Examples:
 We see that the finite intersection of some sets $$X-\{x_i\},\ i\in\{1,\dots,n\}$$, $$x_i\in X$$ is $$X-\{x_1,x_2,\dots,x_n\}$$, which is an open set of the finite-closed topology on _X_. Let $$\mathcal{B}$$ be the collection of all such intersections. We concede that $$\mathcal{B}$$ contains all open sets of _X_, except that $$X\notin\mathcal{B}$$. However, $$\mathcal{B}$$ covers _X_, hence any open set is a union of members of $$\mathcal{B}$$. And by definition of a basis, we conclude $$\mathcal{B}$$ is a basis of the finite-closed topo.
 
 </div>
+
+## Reference sources
+
+1. [Sidney Morris - "Topology Without Tears"](topologywithouttears.net/topbook.pdf)
+
