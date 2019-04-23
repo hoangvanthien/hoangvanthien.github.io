@@ -60,16 +60,16 @@ We know that _X_ and $$\emptyset$$ are always clopen. Let _S_ be another clopen 
 
 ## Some other topologies
 
-### $$T_1$$-space
+### $$T_1$$-space (Fréchet space)
 
-A topo space $$(X,\mathcal{T})$$ is called a <span style="color:red">$$T_1$$-space</span> if every singleton set $$\{x\}$$ is closed. Examples:
+A topo space $$(X,\mathcal{T})$$ is called a <span style="color:red">$$T_1$$-space</span> if every singleton set $$\{x\}$$ is closed. Another definition is that for every pair of distinct points _a_ and _b_ in _X_, there exists an open set containing _a_ but not _b_, **and** there exists an open set containing _b_ but not _a_. Examples:
 
 - Any discrete space is a $$T_1$$-space, since $$\mathcal{T}=\{S:S\subset X\}$$ and $$X-\{x\}\subset X$$, which brings us to $$X-\{x\}\in\mathcal{T}$$ (open set), so $$\{x\}$$ is closed, $$\forall x$$.
 - An infinite set with the finite-closed topo is a $$T_1$$-space, because every singleton set is finite, and in the finite-closed topo space every finite set is closed.
 
-### $$T_0$$-space
+### $$T_0$$-space (Kolmogorov space)
 
-A topo space $$(X,\mathcal{T})$$ is called a <span style="color:red">$$T_0$$-space</span> if for each pair of distinct points _a_ and _b_ in X, there exists an open set contains _a_ but not _b_, or there exists an open set contains _b_ but not _a_. Examples:
+A topo space $$(X,\mathcal{T})$$ is called a <span style="color:red">$$T_0$$-space</span> if for each pair of distinct points _a_ and _b_ in X, there exists an open set containing _a_ but not _b_, **or** there exists an open set containing _b_ but not _a_. Examples:
 
 - Any $$T_1$$-space is an $$T_0$$-space. For each pair of distinct points _a_ and _b_, $$\{a\}$$ is open and does not contain _b_.
 - With the same explanation, any discrete space is a $$T_0$$-space.
