@@ -7,9 +7,19 @@ layout: default
 <section class="post">
     <header class="post-header">
       <p class="post-meta">
+        {% assign date = post.date | date: "%-d %b %Y" | upcase %}
         <span class="post-date">
-          {{ post.date | date: "%-d %b %Y" | upcase }}
+          {{ date }}
         </span>
+        {% if post.last-update %}
+            {% assign last-update = post.last-update | upcase %}
+            {% if last-update != date %}
+            / <i class="fa fa-refresh" aria-hidden="true"></i>
+            <span class="post-date">
+            {{ last-update }}
+            </span>
+            {% endif %}
+        {% endif %}
         {% if post.categories.size > 0 %}
         •
         {% for cat in post.categories %}
@@ -72,9 +82,19 @@ layout: default
 <section class="post">
   <header class="post-header">
     <p class="post-meta">
-      <span class="post-date">
-        {{ post.date | date: "%-d %b %Y" | upcase }}
-      </span>
+        {% assign date = post.date | date: "%-d %b %Y" | upcase %}
+        <span class="post-date">
+          {{ date }}
+        </span>
+        {% if post.last-update %}
+            {% assign last-update = post.last-update | upcase %}
+            {% if last-update != date %}
+            / <i class="fa fa-refresh" aria-hidden="true"></i>
+            <span class="post-date">
+            {{ last-update }}
+            </span>
+            {% endif %}
+        {% endif %}
       {% if post.categories.size > 0 %}
       •
       {% for cat in post.categories %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: ["C++"]
-title: ["A Collection of Concepts and Issues in Template Metaprogramming"]
+title: "A Collection of Concepts and Issues in Template Metaprogramming"
 excerpt_separator: <!--more-->
 ---
 

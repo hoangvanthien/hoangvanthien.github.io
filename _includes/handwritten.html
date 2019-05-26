@@ -1,0 +1,33 @@
+{% assign i = 0 %}
+{% assign start = include.start-page %}
+{% assign end = include.end-page %}
+{% assign vend = end | plus: 4 %}
+
+{% for p in (start..vend) %}
+  {% if i == 0 %}
+  <table>
+  <tr>
+  {% endif %}
+    {% if p > end %}
+    <td width="20%">
+    </td>
+    {% else %}
+    <td width="20%">
+      <div class="post-image">
+          <a href="{{ include.prefix }}{{ p }}.{{ include.suffix }}" data-lightbox="{{ include.data-lightbox }}" data-title="Page {{ p }}">
+              <img src="{{ include.prefix }}{{ p }}.{{ include.suffix }}">
+          </a>
+          <p class="post-image-caption">Page {{ p }}</p>
+      </div>
+    </td>
+    {% endif %}
+  {% assign i = i | plus: 1 %}
+  {% if i == 5 %}
+    {% assign i = 0 %}
+    </tr>
+    </table>
+  {% endif %}
+{% endfor %}
+{% if i != 0 %}
+  </tr></table>
+{% endif %}
