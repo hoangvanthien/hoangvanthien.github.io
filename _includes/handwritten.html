@@ -14,8 +14,8 @@
     {% else %}
     <td width="20%">
       <div class="post-image">
-          <a href="{% if jekyll.environment == 'production' %}https://raw.githubusercontent.com/hoangvanthien/hoangvanthien.github.io/master{% endif %}{{ include.prefix | uri_escape }}{{ p }}.{{ include.suffix }}" data-lightbox="{{ include.data-lightbox }}" data-title="Page {{ p }}">
-              <img src="{% if jekyll.environment == 'production' %}https://raw.githubusercontent.com/hoangvanthien/hoangvanthien.github.io/master{% endif %}{{ include.prefix | uri_escape }}{{ p }}.{{ include.suffix }}">
+          <a href="{{ include.prefix | uri_escape }}{{ p }}.{{ include.suffix }}" data-lightbox="{{ include.data-lightbox }}" data-title="Page {{ p }}">
+              <img src="{{ include.prefix | uri_escape }}{{ p }}.{{ include.suffix }}">
           </a>
           <p class="post-image-caption">Page {{ p }}</p>
       </div>
