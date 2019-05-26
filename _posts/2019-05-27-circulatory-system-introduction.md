@@ -9,5 +9,5 @@ excerpt-separator: <!--more-->
 
 Handwritten notes on the Circulatory System of humans.
 
-{% include handwritten.html start-page=1 end-page=5 prefix="/img/health-and-medicine/circulatory-system-introduction/Health and Medicine - Page " suffix="png" data-lightbox="csi" %}
+{% include handwritten.html start-page=1 end-page=5 prefix="/img/health-and-medicine/circulatory-system-introduction/" suffix="png" data-lightbox="csi" %}
 
