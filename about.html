@@ -1,5 +1,125 @@
 ---
-layout: about
+layout: default
 title: About me
 permalink: /about/
+education:
+  - title: "Vietnamese-German University"
+    place: "Binh Duong, Vietnam"
+    subtitle: "Bachelor of Science, Computer Science"
+    time: "2017 - present"
+    description: "VGU is a Vietnamese public university. It establishes a partnership with Frankfurt University of
+    Applied Science in providing the Computer Science program to undergraduate students."
+  - title: "Ly Tu Trong Gifted High School"
+    place: "Can Tho, Vietnam"
+    subtitle: "Vietnam National High School Graduation Examination"
+    time: "2016 - 2017"
+    description: ""
+awards:
+  - title: "DAAD Scholarship"
+    place: "by FRA-UAS"
+    subtitle: "Academic exchange study in Germany"
+    time: "2019"
+    description: "The Frankfurt University of Applied Sciences grants a scholarship, funded by the German Academic Exchange Service (DAAD – Deutscher Akademischer Austauschdienst), for academic study and training purposes in Germany."
+  - title: "Vietnam Olympiad of Informatics"
+    place: "by MoET"
+    subtitle: "2nd Prize, Ranked #34"
+    time: "2017"
+    description: "An annual competitive programming contest held by the Ministry of Education and Training of Vietnam
+    for high-school students to select representatives for the International Olympiad of Informatics (IOI)."
+  - title: "The April 30 Olympiad of Informatics"
+    place: "by HCMC DoET"
+    subtitle: "Gold Medal, Ranked #6"
+    time: "2016"
+    description: "An annual competitive programming contest held by HCMC’s Department of Education and Training
+    for Southern-Vietnamese high-school students"
+  - title: "VGU Merit Scholar"
+    place: "by VGU"
+    subtitle: "75% and 50% scholarships"
+    time: "2017 - 2019"
+    description: "Honorable receiver of the Vietnamese-German University’s merit scholarship during the academic
+    years 2017-2018 (75% tuition fee) and 2018-2019 (50% tuition fee)."
+activities:
+  - title: "Vietnam Summer School of Science"
+    place: "Rencontres du Vietnam"
+    subtitle: "Student"
+    time: "2019"
+    description: "VSSS is a non-profit organization aiming to inspire Vietnamese young people and prepare them necessary skills to be successful in the academia. Funded by Rencontres du Vietnam, VSSS holds annual conferences where they teach reasoning and research methods for all fields of study."
+  - title: "Google Summer of Code"
+    place: "CGAL Project & Google LLC"
+    subtitle: "Student Developer"
+    time: "2019, 2018"
+    description: "An annual program in which Google awards stipends to all students who successfully complete a
+    requested free and open-source software coding project during the summer."
+  - title: "PiMA Summer Camp"
+    place: "in HCMC, Vietnam"
+    subtitle: "Mentor"
+    time: "2019, 2017"
+    description: "The program aiming at teaching high-school students how to apply mathematics to real-life problems.
+    In 2017, I mentored a group of three students on the project “Evaluate biomedical devices”, using
+    Python to analyze data and LATEX to present the report."
+  - title: "Free Contest"
+    place: ""
+    subtitle: "Junior System Admin & Problem-setter"
+    time: "2016"
+    description: "A weekly IOI-like competition for Vietnamese students, held by a small group of enthusiastic programmers. I managed the server of the contest and designed some programming problems for the
+    participants."
+experience:
+  cppdev:
+    - title: "Centre National de la Recherche Scientifique"
+      place: ""
+      subtitle: "CGAL Contributor<br>Advisors: Prof. Guillaume Damiand (CNRS) & Dr. Francis Lazarus (GIPSA-lab)"
+      time: "2019"
+      description: "I implemented the algorithm to compute non-contractible cycles on a 2-manifold, being part of the
+      Surface mesh topology package. It is then used to find the edge-width and the face-width of the
+      surface. The surface can be orientable or non-orientable."
+    - title: "Institut National de Recherche en Informatique et en Automatique"
+      place: ""
+      subtitle: "CGAL Contributor<br>Advisor: Dr. Dmitry Anisimov (INRIA)"
+      time: "2018"
+      description: "I implemented the region growing algorithm, being a part of the Shape detection package. The algorithm has been generalized to be working with any user-defined elements, connectivity method, and validity checking rules. Popular instantiations of the algorithm include:<br> <ul><li>Detect 3D planes from a cloud of points with normals attached to them.</li><li>Detect 3D planes in a polygonal mesh.</li><li>Detect 2D lines among a set of 2D points.</li></ul>It searches for spatially neighboring points using Kd tree, and the planes/lines are fit using Linear regression method. It is a robust, simple, and consistent shape detection algorithm, improved from RANSAC method, and is used widely in 3D/2D segmentation."
 ---
+
+<blockquote>
+  In character, in manner, in style, in all things, the supreme excellence is simplicity.<br>
+  &mdash; Henry Wadsworth Longfellow
+</blockquote>
+
+<h1>Education</h1>
+<hr>
+
+<ul>
+  {% for cv-entry in page.education %}
+  <li>{% include cv-entry.html %}</li>
+  <br>
+  {% endfor %}
+</ul>
+
+<h1>Awards and Honours</h1>
+<hr>
+
+<ul>
+  {% for cv-entry in page.awards %}
+  <li>{% include cv-entry.html %}</li>
+  <br>
+  {% endfor %}
+</ul>
+
+<h1>Activities</h1>
+<hr>
+
+<ul>
+  {% for cv-entry in page.activities %}
+  <li>{% include cv-entry.html %}</li>
+  <br>
+  {% endfor %}
+</ul>
+
+<h1>Experience</h1>
+<hr>
+<h2>C++ Library Developer</h2>
+<ul>
+  {% for cv-entry in page.experience.cppdev %}
+  <li>{% include cv-entry.html %}</li>
+  <br>
+  {% endfor %}
+</ul>
