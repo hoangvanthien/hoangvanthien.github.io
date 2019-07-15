@@ -292,3 +292,15 @@ a.read-more {
 .toggleButton {
     cursor: pointer;
 }
+
+div.highlighter-rouge {
+  margin: 10px;
+}
+
+div[class="highlighter-rouge"], .no-background {
+  pre.highlight {
+    background-color: transparent;
+    border: none;
+  }
+  margin-left: 20px;
+}
