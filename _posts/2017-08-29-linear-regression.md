@@ -211,21 +211,19 @@ $$
 Quay lại phương trình vừa nãy, ta có:
 
 $$
-\bbox[5pt, border:2pt solid black]{
-  \textbf{X}^T\textbf{Xa} = \textbf{X}^T\textbf{y}
-}
+\textbf{X}^T\textbf{Xa} = \textbf{X}^T\textbf{y}
 $$
 
 Nếu $$\textbf{X}^T\textbf{X}$$ tồn tại ma trận nghịch đảo (inverse matrix) thì:
 
 $$
-  \textbf{a} = \left(\textbf{X}^T\textbf{X}\right)^{-1}\textbf{X}^T\textbf{y}
+\textbf{a} = \left(\textbf{X}^T\textbf{X}\right)^{-1}\textbf{X}^T\textbf{y}
 $$
 
 nếu không thì lấy ma trận giả nghịch đảo (pseudo inverse matrix):
 
 $$
-  \textbf{a} = \left(\textbf{X}^T\textbf{X}\right)^{\dagger}\textbf{X}^T\textbf{y}
+\textbf{a} = \left(\textbf{X}^T\textbf{X}\right)^{\dagger}\textbf{X}^T\textbf{y}
 $$
 
 Như vậy chúng ta đã tìm ra được nghiệm bài toán.
