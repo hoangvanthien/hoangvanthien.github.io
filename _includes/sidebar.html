@@ -1,8 +1,7 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
 <div class="cover-card table-cell table-middle">
-    <iframe src="/avatar.html" width="170px" height="190px" onload="resizeIframe(this)" frameBorder="0" style="height: 190px; width: 170px;">
-    </iframe>
+  <img src="{{ site.url }}/{{ author.avatar }}" alt="" class="avatar">
   <a href="{{ site.url }}/" class="author_name">
     <span style="color:#1F9DFF">{{ author.vorname }}</span>
     <span style="color:#FF6666">{{ author.familienname }}</span>
