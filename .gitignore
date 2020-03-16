@@ -5,6 +5,7 @@ _drafts
 .ruby-version
 .DS_Store
 .vscode
+.jekyll-cache
 MathJax
 *.aux
 *.fdb_latexmk

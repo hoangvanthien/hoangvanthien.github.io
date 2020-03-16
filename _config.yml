@@ -28,6 +28,7 @@ kramdown:
   enable_coderay: false
   math_engine: mathjax
 
+
 #
 ###################################
 # Site Owner configuration

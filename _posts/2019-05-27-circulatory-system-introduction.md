@@ -2,7 +2,6 @@
 layout: post
 title: Circulatory System Introduction
 categories: ["Health and Medicine"]
-sticky: true
 last-update: 27 May 2019
 excerpt-separator: <!--more-->
 ---
