@@ -297,7 +297,7 @@ div.highlighter-rouge {
   margin: 10px 0;
 }
 
-div[class="highlighter-rouge"], .no-background {
+div[class="highlighter-rouge"], .no-background, div.language-plaintext {
   margin-left: 50px;
   pre {
     background-color: white;
