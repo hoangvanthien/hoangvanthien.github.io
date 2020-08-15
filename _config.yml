@@ -27,6 +27,14 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
   math_engine: mathjax
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 
 #
@@ -55,7 +63,7 @@ owner:
   stackoverflow:
   linkedin:
   xing:
-  instagram: thelazycat__
+  instagram: iamthienhoang
   lastfm:
   tumblr:
   pinterest:
