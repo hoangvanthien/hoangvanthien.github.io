@@ -5,6 +5,8 @@ excerpt-separator: <!--more-->
 categories: ["Statistics"]
 ---
 
+I'm reading the book "Probability and Statistics for Engineering and the Sciences" by Jay L. Devore.
+
 ## Dotplot
 
 Dot plot is a great way to display frequency of values.
@@ -45,7 +47,7 @@ plt.show()
 
 Notice at line 7 I defined a function to calculate the y-coordinates for the values.
 
-<!-- ![image-20200714214446516](C:\Users\thien\OneDrive\Documents\Notes\image-20200714214446516.png) -->
+![x](https://i.imgur.com/7fsIRSu.png)
 
 ## Histogram
 
@@ -101,7 +103,7 @@ plt.xticks(bins)
 plt.title('Histogram of the energy consumption data from Example 1.10')
 ```
 
-<!-- ![image-20200714214237379](C:\Users\thien\OneDrive\Documents\Notes\image-20200714214237379.png) -->
+![x](https://i.imgur.com/iYfovmf.png)
 
 ### Value-relative frequency
 
@@ -125,7 +127,7 @@ plt.xticks(bins)
 plt.title('Histogram of the energy consumption data from Example 1.10')
 ```
 
-<!-- ![image-20200714214353636](C:\Users\thien\OneDrive\Documents\Notes\image-20200714214353636.png) -->
+![x](https://i.imgur.com/r9RfyW2.png)
 
 
 
@@ -158,7 +160,7 @@ plt.title('A Minitab density histogram for the bond strength data of Example 1.1
 
 
 
-<!-- ![image-20200715004700325](C:\Users\thien\OneDrive\Documents\Notes\image-20200715004700325.png) -->
+![x](https://i.imgur.com/os6zrtu.png)
 
 ### `np.histogram`
 
@@ -200,7 +202,7 @@ plt.title('A boxplot of the nitrogen load data showing mild and extreme outliers
 
 
 
-<!-- ![image-20200715015138240](C:\Users\thien\OneDrive\Documents\Notes\image-20200715015138240.png) -->
+![x](https://i.imgur.com/x7KZc9t.png)
 
 An example of drawing multiple box plots for comparison:
 
@@ -221,7 +223,7 @@ plt.ylabel("Sodium Content")
 
 
 
-<!-- ![image-20200715015533579](C:\Users\thien\OneDrive\Documents\Notes\image-20200715015533579.png) -->
+![x](https://i.imgur.com/AOiUTYA.png)
 
 
 
@@ -251,7 +253,7 @@ plt.show()
 
 When $$\alpha=1$$, i.e. the original data is plotted
 
-<!-- ![image-20200814180009217](C:\Users\thien\OneDrive\Documents\Notes\image-20200814180009217.png) -->
+![image-20200814180009217](https://i.imgur.com/8TAD5BL.png)
 
 When $$\alpha=0.5$$
 
@@ -262,10 +264,10 @@ plt.title("Smoothed data, alpha=0.5")
 plt.xticks(t)
 ```
 
-<!-- ![image-20200814175956894](C:\Users\thien\OneDrive\Documents\Notes\image-20200814175956894.png) -->
+![image-20200814175956894](https://i.imgur.com/yuZeeUE.png)
 
 When $$\alpha=0.1$$
 
-<!-- ![image-20200814180116435](C:\Users\thien\OneDrive\Documents\Notes\image-20200814180116435.png) -->
+![image-20200814180116435](https://i.imgur.com/5Tofsgo.png)
 
 As $$\alpha$$ gets smaller, the data becomes smoother (even if they are far from the original data). At $$\alpha=0$$, the graph is a horizontal straight line $$y=x_1$$.
