@@ -80,7 +80,7 @@ thus it's indeed
 
 $$\sum_{\sigma\in S_2}q^{\text{inv}(\sigma)}=[2]_q!$$
 
-Assume that the formula is true with $n=k$:
+Assume that the formula is true with $$n=k$$:
 
 $$\sum_{\sigma\in S_k} q^{\text{inv}(\sigma)}=[k]_q!$$
 
