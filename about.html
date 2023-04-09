@@ -6,7 +6,7 @@ education:
   - title: "Vietnamese-German University"
     place: "Binh Duong, Vietnam"
     subtitle: "Bachelor of Science, Computer Science"
-    time: "2017 - present"
+    time: "2017 - 2021"
     description: "VGU is a Vietnamese public university. It establishes a partnership with Frankfurt University of
     Applied Science in providing the Computer Science program to undergraduate students."
   - title: "Ly Tu Trong Gifted High School"
@@ -64,19 +64,33 @@ activities:
     description: "A weekly IOI-like competition for Vietnamese students, held by a small group of enthusiastic programmers. I managed the server of the contest and designed some programming problems for the
     participants."
 experience:
-  cppdev:
-    - title: "Centre National de la Recherche Scientifique"
-      place: ""
-      subtitle: "CGAL Contributor<br>Advisors: Prof. Guillaume Damiand (CNRS) & Dr. Francis Lazarus (GIPSA-lab)"
-      time: "2019"
-      description: "I implemented the algorithm to compute non-contractible cycles on a 2-manifold, being part of the
-      Surface mesh topology package. It is then used to find the edge-width and the face-width of the
-      surface. The surface can be orientable or non-orientable."
-    - title: "Institut National de Recherche en Informatique et en Automatique"
-      place: ""
-      subtitle: "CGAL Contributor<br>Advisor: Dr. Dmitry Anisimov (INRIA)"
-      time: "2018"
-      description: "I implemented the region growing algorithm, being a part of the Shape detection package. The algorithm has been generalized to be working with any user-defined elements, connectivity method, and validity checking rules. Popular instantiations of the algorithm include:<br> <ul><li>Detect 3D planes from a cloud of points with normals attached to them.</li><li>Detect 3D planes in a polygonal mesh.</li><li>Detect 2D lines among a set of 2D points.</li></ul>It searches for spatially neighboring points using Kd tree, and the planes/lines are fit using Linear regression method. It is a robust, simple, and consistent shape detection algorithm, improved from RANSAC method, and is used widely in 3D/2D segmentation."
+  - title: "Amazon"
+    place: "Luxembourg, Luxembourg"
+    subtitle: "Software Development Engineer"
+    time: "2022 - now"
+    description: ""
+  - title: "Katalon"
+    place: "HCMC, Vietnam"
+    subtitle: "Software Engineer"
+    time: "3/2021 - 7/2022"
+    description: "Key contributions:<br><ul><li>Implementing an authentication server using OpenID Connect (OIDC) standard, allowing third party websites to log in with Katalon.</li><li>Building dashboards (ChartJS) for Katalon customers to view and export their usage data, designing database (PostgreSQL) schemas to support the calculation and keep track of the usage, optimizing SQL queries.</li><li>Building an API Query Language on back-end (Kotlin Native + JPA) to enable general-purpose APIs.</li><li>Building an online purchasing flow for Katalon products.</li><li>Building GUI for several functions in product KatOne (single-page web app), using Material UI, Typescript, React, Redux.</li><li>Integrating product KatOne with Recurly, Stripe, Salesforce, and other Katalon products.</li></ul>"
+  - title: "Katalon"
+    place: "HCMC, Vietnam"
+    subtitle: "Salesforce Developer (Internship)"
+    time: "9/2020 - 1/2021"
+    description: "Key contributions:<br><ul><li>Cleaning, transforming, and migrating the data from HubSpot to Salesforce.</li><li>Designing robust automations for the Sales team using Apex (with Bulk design patterns); writing test cases and releasing new features for the team.</li><li>Customizing Salesforce environment following requests from the Sales team.</li><li>Integrating with Segment, Recurly, Calendly, MadKudu, and other Katalon products.</li></ul>"
+  - title: "Centre National de la Recherche Scientifique"
+    place: "Remote"
+    subtitle: "CGAL Developer (Internship)<br>Advisors: Prof. Guillaume Damiand (CNRS) & Dr. Francis Lazarus (GIPSA-lab)"
+    time: "6/2019 - 9/2019"
+    description: "I implemented the algorithm to compute non-contractible cycles on a 2-manifold, being part of the
+    Surface mesh topology package. It is then used to find the edge-width and the face-width of the
+    surface. The surface can be orientable or non-orientable."
+  - title: "Institut National de Recherche en Informatique et en Automatique"
+    place: "Remote"
+    subtitle: "CGAL Developer (Internship)<br>Advisor: Dr. Dmitry Anisimov (INRIA)"
+    time: "6/2018 - 8/2018"
+    description: "I implemented the region growing algorithm, being a part of the Shape detection package. The algorithm has been generalized to be working with any user-defined elements, connectivity method, and validity checking rules. Popular instantiations of the algorithm include:<br> <ul><li>Detect 3D planes from a cloud of points with normals attached to them.</li><li>Detect 3D planes in a polygonal mesh.</li><li>Detect 2D lines among a set of 2D points.</li></ul>It searches for spatially neighboring points using Kd tree, and the planes/lines are fit using Linear regression method. It is a robust, simple, and consistent shape detection algorithm, improved from RANSAC method, and is used widely in 3D/2D segmentation."
 ---
 
 <blockquote>
@@ -89,6 +103,16 @@ experience:
 
 <ul>
   {% for cv-entry in page.education %}
+  <li>{% include cv-entry.html %}</li>
+  <br>
+  {% endfor %}
+</ul>
+
+<h1>Experience</h1>
+<hr>
+
+<ul>
+  {% for cv-entry in page.experience %}
   <li>{% include cv-entry.html %}</li>
   <br>
   {% endfor %}
@@ -109,16 +133,6 @@ experience:
 
 <ul>
   {% for cv-entry in page.activities %}
-  <li>{% include cv-entry.html %}</li>
-  <br>
-  {% endfor %}
-</ul>
-
-<h1>Experience</h1>
-<hr>
-<h2>C++ Library Developer</h2>
-<ul>
-  {% for cv-entry in page.experience.cppdev %}
   <li>{% include cv-entry.html %}</li>
   <br>
   {% endfor %}

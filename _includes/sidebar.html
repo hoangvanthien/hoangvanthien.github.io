@@ -16,19 +16,13 @@
       </li>
       <li class="nav-item">
         <a href="{{ site.url }}/GratitudeHall">gratitude hall</a>
-        <span>/</span>
       </li>
       {% for page in site.pages %} {% if page.title %}
       <li class="nav-item">
+        <span>/</span>
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-        {% unless forloop.last %}
-          <span>/</span>
-        {% endunless %}
       </li>
       {% endif %} {% endfor %}
-      <li class="nav-item">
-        <a href="https://www.buymeacoffee.com/tvhoang" target="_blank">support me</a>
-      </li>
     </ul>
   </nav>
   {% include social-links.html %}

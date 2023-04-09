@@ -47,11 +47,11 @@ owner:
   familienname: Hoang
   name: Thien Hoang
   avatar: avatar.png
-  job: "Student"
-  bio: "This is the place I keep notes of what I learnt and what I accomplished."
+  job: "Software Engineer"
+  bio: "This is the place I keep notes of what I learned and what I accomplished."
   email: thienvhoang99@gmail.com
   disqus-shortname:
-  twitter: ThienVHoang
+  twitter:
   facebook:
   google:
     analytics:
@@ -61,9 +61,9 @@ owner:
   bing-verify:
   github: hoangvanthien
   stackoverflow:
-  linkedin:
+  linkedin: tvhoang
   xing:
-  instagram: iamthienhoang
+  instagram: admirable.mushroom
   lastfm:
   tumblr:
   pinterest:
