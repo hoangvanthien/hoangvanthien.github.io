@@ -28,14 +28,21 @@ layout: default
         {% if page.last-update %}
             {% assign last-update = page.last-update | upcase %}
             {% if last-update != date %}
-            / <i class="fa fa-refresh" aria-hidden="true"></i>
+            / <i class="fa-solid fa-refresh" aria-hidden="true"></i>
             <span class="post-date">
             {{ last-update }}
             </span>
             {% endif %}
         {% endif %}
-      •
-      {% include read_time.html %}
+        {% if page.categories.size > 0 %}
+        •
+        {% for cat in page.categories %}
+          <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
+          {% unless forloop.last %}
+          <span>/</span>
+          {% endunless %}
+        {% endfor %}
+        {% endif %}
     </span>
 
   </header>
@@ -49,13 +56,13 @@ layout: default
   <h6>Share on: </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa-brands fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa-brands fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa-brands fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div><!-- end share-buttons -->

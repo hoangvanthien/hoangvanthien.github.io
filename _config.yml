@@ -76,6 +76,7 @@ owner:
   flickr:
   codepen:
   telegram:
+  goodreads: tvhoang
 
 exclude:
   - LICENSE
