@@ -10,7 +10,7 @@
 - [MathJax](https://www.mathjax.org/)
 - [GitHub Pages](https://pages.github.com/)
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
-- [ScroolReveal](scrollrevealjs.org/)
+- [ScrollReveal](scrollrevealjs.org/)
 
 ## Copyrighted content
 
